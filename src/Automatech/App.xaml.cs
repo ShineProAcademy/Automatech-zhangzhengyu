@@ -1,4 +1,6 @@
-﻿using Prism.Ioc;
+﻿using Automatech.Views;
+using Prism.Ioc;
+using Prism.Regions;
 using Prism.Unity;
 using System.Configuration;
 using System.Data;
@@ -13,7 +15,7 @@ namespace Automatech
     {
         protected override Window CreateShell()
         {
-            return new MainWindow();
+            return Container.Resolve<MainWindow>();
         }
 
         protected override void OnStartup(StartupEventArgs e)
@@ -24,7 +26,7 @@ namespace Automatech
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
+            containerRegistry.Register<MainWindow>();
         }
     }
 

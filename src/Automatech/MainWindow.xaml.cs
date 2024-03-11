@@ -1,4 +1,6 @@
 ﻿using Automatech.ViewModels;
+using Automatech.Views;
+using Prism.Regions;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,10 +19,11 @@ namespace Automatech
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(IRegionManager regionManager)
         {
             InitializeComponent();
-            this.DataContext = new MainViewModel();
+            regionManager.RegisterViewWithRegion("LeftMenu", typeof(LeftMenu));
+            regionManager.RegisterViewWithRegion("MainContent", typeof(MainContent));
         }
     }
 }

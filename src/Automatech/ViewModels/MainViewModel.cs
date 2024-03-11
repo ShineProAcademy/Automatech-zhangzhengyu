@@ -11,12 +11,9 @@ namespace Automatech.ViewModels
 {
     public class MainViewModel : ObservableObject
     {
-		private Status status;
-
-		public Status Status
-        {
-			get { return status; }
-			set { SetProperty(ref status, value); }
-		}
+	    public MainViewModel()
+	    {
+			
+	    }
 	}
 }

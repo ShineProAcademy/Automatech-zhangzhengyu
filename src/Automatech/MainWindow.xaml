@@ -3,22 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Automatech"
-        xmlns:control="clr-namespace:Automatech.Controls;assembly=Automatech.Controls"
+        xmlns:prism="http://prismlibrary.com/"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
+            <ColumnDefinition Width="150"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <control:StatusControl Name="state" Status="Idle" Height="50" Width="50" Brush="Yellow" Text="状态灯">
-            <control:StatusControl.Items>
-                <control:StatusItem Status="Idle" Brush="Yellow" Text="空闲"/>
-                <control:StatusItem Status="Running" Brush="Green" Text="运行"/>
-                <control:StatusItem Status="Estoped" Brush="Red" Text="紧停"/>
-            </control:StatusControl.Items>
-        </control:StatusControl>
+        <ContentControl prism:RegionManager.RegionName="LeftMenu"/>
+        <ContentControl Grid.Column="1" prism:RegionManager.RegionName="MainContent"/>
     </Grid>
 </Window>
