@@ -5,5 +5,5 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Automatech.AvaloniaApp.MainWindow"
         Title="Automatech.AvaloniaApp">
-    Welcome to Avalonia!
+    <TextBlock Text="HelloWorld!" VerticalAlignment="Center" HorizontalAlignment="Center" />
 </Window>
