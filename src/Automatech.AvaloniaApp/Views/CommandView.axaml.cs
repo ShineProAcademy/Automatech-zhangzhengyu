@@ -1,15 +1,13 @@
-using Automatech.AvaloniaApp.ViewModels;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace Automatech.AvaloniaApp.Views;
 
-public partial class LeftMenu : UserControl
+public partial class CommandView : UserControl
 {
-    public LeftMenu()
+    public CommandView()
     {
         InitializeComponent();
-        this.DataContext = new LeftViewModel();
     }
 }

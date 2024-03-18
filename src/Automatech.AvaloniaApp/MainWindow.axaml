@@ -11,9 +11,11 @@
     <Design.DataContext>
         <vm:MainWindowViewModel></vm:MainWindowViewModel>
     </Design.DataContext>
-    
-    <Grid ColumnDefinitions="120 *">
-        <local:LeftMenu></local:LeftMenu>
-        <ContentControl Grid.Column="1" Content="{Binding Content}"></ContentControl>
+    <Grid ColumnDefinitions="120 * 120" >
+        <ContentControl Content="{Binding LeftMenu}"></ContentControl>
+        <ContentControl Grid.Column="1" Content="{Binding MainConent}"></ContentControl>
+        <AutoCompleteBox Grid.Column="2">
+          
+        </AutoCompleteBox>
     </Grid>
 </Window>

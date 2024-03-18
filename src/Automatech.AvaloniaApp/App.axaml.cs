@@ -22,7 +22,6 @@ namespace Automatech.AvaloniaApp
                 {
                     DataContext = new MainWindowViewModel()
                 };
-
             }
 
             base.OnFrameworkInitializationCompleted();
