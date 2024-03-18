@@ -1,4 +1,6 @@
+using Automatech.AvaloniaApp.ViewModels;
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 
 namespace Automatech.AvaloniaApp
 {

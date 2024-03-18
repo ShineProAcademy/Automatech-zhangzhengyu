@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="src/Automatech.AvaloniaApp/App.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/MainWindow.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/LeftMenu.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaMvvmApp/App.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />
+        <entry key="src/Automatech.AvaloniaMvvmApp/Views/MainWindow.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

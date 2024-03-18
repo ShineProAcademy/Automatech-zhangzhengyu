@@ -1,3 +1,4 @@
+using Automatech.AvaloniaMvvmApp.ViewModels;
 using Avalonia.Controls;
 
 namespace Automatech.AvaloniaMvvmApp.Views;
