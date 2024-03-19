@@ -1,22 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
+using Automatech.AvaloniaApp.ViewModels;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
 
 namespace Automatech.AvaloniaApp.Models
 {
     public class TreeNode
     {
-        public string Header { get; set; } 
+        public string Header { get; set; }
 
-        public string Commad { get; set; }
+        public Type CommandParameter { get; private set; }
 
-        public TreeNode(string header) 
+        public bool IsSelected { get; set; }
+        public ICommand Command { get; set; }
+
+        public TreeNode(string header, Type commandParameter) 
         {
-            Header = header;
-            Children = new List<TreeNode>();
+            this.Header = header;
+            this.CommandParameter = commandParameter;
+            this.Command = new RelayCommand(Navigate);
+            this.Children = new List<TreeNode>();
+        }
+
+        private void Navigate()
+        {
+            WeakReferenceMessenger.Default.Send<TreeNode>(this);
         }
 
         public IList<TreeNode> Children { get; private set; }

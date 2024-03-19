@@ -1,0 +1,32 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="clr-namespace:Automatech.AvaloniaApp.ViewModels"
+             x:DataType="vm:ListViewModel"
+             x:Class="Automatech.AvaloniaApp.Views.ListView">
+    <UniformGrid Columns="2" Background="{DynamicResource ThemeBackgroundBrush}">
+        <DataGrid Margin="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding DataSource}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="序号" Binding="{Binding StudentId}"></DataGridTextColumn>
+                <DataGridTextColumn Header="姓名" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="性别" Binding="{Binding Sex}"></DataGridTextColumn>
+                <DataGridTextColumn Header="年龄" Binding="{Binding Age}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <ListBox Margin="20" ItemsSource="{Binding DataSource}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <UniformGrid Columns="4">
+                        <TextBlock Text="{Binding StudentId}"/>
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text="{Binding Sex}" />
+                        <TextBlock Text="{Binding Age}" />
+                    </UniformGrid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </UniformGrid>
+</UserControl>

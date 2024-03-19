@@ -12,7 +12,7 @@ public class StudentRepository : IDataRepository<Student,int>
     {
         _students = new List<Student>();
         
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 50; i++)
         {
            _students.Add(new Student(){StudentId = i, Name = $"学生{i}", Sex = true, Age  = 11 + i});
         }

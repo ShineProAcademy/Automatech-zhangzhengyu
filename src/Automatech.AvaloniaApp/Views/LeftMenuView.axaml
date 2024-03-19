@@ -2,18 +2,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:u="https://irihi.tech/ursa"
+             mc:Ignorable="d" d:DesignWidth="120" d:DesignHeight="450"
              xmlns:vm="clr-namespace:Automatech.AvaloniaApp.ViewModels"
+             xmlns:models="clr-namespace:Automatech.AvaloniaApp.Models"
              x:DataType="vm:LeftMenuViewModel"
              x:Class="Automatech.AvaloniaApp.Views.LeftMenuView">
-    <Design.DataContext>
-        <vm:LeftMenuViewModel></vm:LeftMenuViewModel>
-    </Design.DataContext>   
-   <TreeView ItemsSource="{Binding Nodes}">
-       <TreeView.ItemTemplate>
-           <TreeDataTemplate ItemsSource="{Binding Children}">
-               <TextBlock Text="{Binding  Header}"></TextBlock>
-           </TreeDataTemplate>
-       </TreeView.ItemTemplate>
-   </TreeView>
+   <Border Theme="{DynamicResource CardBorder}" Padding="8 4"
+           VerticalAlignment="Stretch">
+       <u:NavMenu ItemsSource="{Binding Nodes}" CommandBinding="{Binding Command}"
+          HeaderBinding="{Binding Header}" HorizontalAlignment="Center" ExpandWidth="100"
+          SubMenuBinding="{Binding Children}" SelectedItem="{Binding }"/>
+   </Border>
 </UserControl>

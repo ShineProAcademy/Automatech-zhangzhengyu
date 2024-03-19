@@ -1,0 +1,17 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="clr-namespace:Automatech.AvaloniaApp.ViewModels"
+             x:Class="Automatech.AvaloniaApp.Views.TextBoxView"
+             x:DataType="vm:TextBoxViewModel">
+   <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10">
+       <TextBox Width="300" />
+       <TextBox Width="300" Watermark="this is a input box"/>
+       <TextBlock Text="please enter your name:"></TextBlock>
+       <AutoCompleteBox Width="300" ItemsSource="{Binding Source}"/>
+       <MaskedTextBox Width="300" Mask="###-####-####"/>
+   </StackPanel>
+</UserControl>

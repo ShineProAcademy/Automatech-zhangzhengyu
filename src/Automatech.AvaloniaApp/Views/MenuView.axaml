@@ -1,0 +1,37 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:u="https://irihi.tech/ursa"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Automatech.AvaloniaApp.Views.MenuView">
+    <Grid ColumnDefinitions="120 *">
+        <u:NavMenu >
+            <u:NavMenuItem Header="文件">
+                <u:NavMenuItem Header="保存" />
+                <u:NavMenuItem Header="另存为" />
+                <u:NavMenuItem Header="导出" />
+            </u:NavMenuItem>
+            <u:NavMenuItem Header="编辑">
+                <u:NavMenuItem Header="保存" />
+                <u:NavMenuItem Header="另存为" />
+                <u:NavMenuItem Header="导出" />
+            </u:NavMenuItem>
+            <u:NavMenuItem Header="绘图">
+                <u:NavMenuItem Header="保存" />
+                <u:NavMenuItem Header="另存为" />
+                <u:NavMenuItem Header="导出" />
+            </u:NavMenuItem>
+            <u:NavMenuItem Header="工艺">
+                <u:NavMenuItem Header="保存" />
+                <u:NavMenuItem Header="另存为" />
+                <u:NavMenuItem Header="导出" />
+            </u:NavMenuItem>
+            <u:NavMenuItem Header="路径规划">
+                <u:NavMenuItem Header="保存" />
+                <u:NavMenuItem Header="另存为" />
+                <u:NavMenuItem Header="导出" />
+            </u:NavMenuItem>
+        </u:NavMenu>
+    </Grid>
+</UserControl>
