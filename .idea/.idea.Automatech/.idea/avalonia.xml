@@ -6,15 +6,20 @@
         <entry key="src/Automatech.AvaloniaApp/App.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/MainWindow.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/ButtonView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/CheckBoxView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/ComboBoxView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/Commad.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/CommandView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/DataGridView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/GroupBoxView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/LeftMenu.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/LeftMenuView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/ListView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/MainFrame.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/MainView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/MenuView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/ProgressBar.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/TabView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/TextBoxView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaMvvmApp/App.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />
         <entry key="src/Automatech.AvaloniaMvvmApp/Views/MainWindow.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />

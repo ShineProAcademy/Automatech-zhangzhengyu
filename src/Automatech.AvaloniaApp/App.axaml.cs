@@ -8,6 +8,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Live.Avalonia;
 using Unity;
+using Unity.Lifetime;
 
 namespace Automatech.AvaloniaApp
 {

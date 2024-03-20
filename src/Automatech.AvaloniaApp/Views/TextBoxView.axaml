@@ -8,7 +8,7 @@
              x:Class="Automatech.AvaloniaApp.Views.TextBoxView"
              x:DataType="vm:TextBoxViewModel">
    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10">
-       <TextBox Width="300" />
+       <TextBox Width="300" PasswordChar="*" Watermark="Please enter your password"/>
        <TextBox Width="300" Watermark="this is a input box"/>
        <TextBlock Text="please enter your name:"></TextBlock>
        <AutoCompleteBox Width="300" ItemsSource="{Binding Source}"/>

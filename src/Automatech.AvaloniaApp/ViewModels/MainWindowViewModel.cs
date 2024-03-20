@@ -29,8 +29,8 @@ public class MainWindowViewModel : ViewModelBase
     public MainWindowViewModel(IUnityContainer container)
     {
         this._container = container;
-        this.LeftMenu = new LeftMenuViewModel();
-        this.MainContent = new TextBoxViewModel();
+        this.LeftMenu = _container.Resolve<LeftMenuViewModel>();
+        this.MainContent = _container.Resolve<ButtonViewModel>();
         
         WeakReferenceMessenger.Default.Register<TreeNode>(this, Navigation);
     }
@@ -42,6 +42,11 @@ public class MainWindowViewModel : ViewModelBase
             return;
         }
 
+        if (message.CommandParameter is null)
+        {
+            return;
+        }
+        
         if (message.CommandParameter.IsSubclassOf(typeof(ViewModelBase)))
         {
             MainContent = (ViewModelBase)_container.Resolve(message.CommandParameter);

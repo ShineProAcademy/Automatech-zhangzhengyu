@@ -6,7 +6,8 @@
              xmlns:vm="clr-namespace:Automatech.AvaloniaApp.ViewModels"
              x:DataType="vm:ButtonViewModel"
              x:Class="Automatech.AvaloniaApp.Views.ButtonView">
-    <Grid RowDefinitions="Auto Auto Auto Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <StackPanel Spacing="10" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button Height="30" Width="120" Content="功能1"></Button>
-    </Grid>
+        <RadioButton Height="30" Width="120" Content="功能1"></RadioButton>
+    </StackPanel>
 </UserControl>
