@@ -13,15 +13,29 @@
         </TabItem>
         <TabItem Header="Canvas">
            <Canvas>
-               <Border Canvas.Left="100" Canvas.Top="100" ZIndex="1" Width="200" Height="200" Background="Yellow"></Border>
-               <Border Canvas.Left="100" Canvas.Top="100" ZIndex="0" Width="200" Height="200" Background="Green"></Border>
+               <Border Canvas.Left="100" Canvas.Top="100" ZIndex="1" Width="200" Height="200" Background="Yellow" Opacity="0.6"></Border>
+               <Border Canvas.Left="120" Canvas.Top="120" ZIndex="0" Width="200" Height="200" Background="Green"></Border>
            </Canvas>
         </TabItem>
-        <TabItem Header="功能3">
-            <TextBlock Text="功能3"></TextBlock>
+        <TabItem Header="DockPanel">
+            <DockPanel>
+                <Rectangle DockPanel.Dock="Top" Height="100" Width="100" Fill="Red" Opacity="0.6"/>
+                <Rectangle DockPanel.Dock="Bottom" Height="100" Width="100" Fill="OrangeRed" Opacity="0.6"/>
+                <Rectangle DockPanel.Dock="Left" Height="100" Width="100" Fill="Yellow" Opacity="0.6"/>
+                <Rectangle DockPanel.Dock="Right" Height="100" Width="100" Fill="Green" Opacity="0.6"/>
+                <Rectangle Height="100" Width="100" Fill="Blue" Opacity="0.6"/>
+            </DockPanel>
         </TabItem>
-        <TabItem Header="功能4">
-            <TextBlock Text="功能4"></TextBlock>
+        <TabItem Header="Expander">
+            <Expander Header="功能块" VerticalAlignment="Top">
+               <ListBox>
+                   <ListBoxItem Content="功能1"/>
+                   <ListBoxItem Content="功能2"/>
+                   <ListBoxItem Content="功能3"/>
+                   <ListBoxItem Content="功能4"/>
+                   <ListBoxItem Content="功能5"/>
+               </ListBox>
+            </Expander>
         </TabItem>
     </TabControl>
 </UserControl>
