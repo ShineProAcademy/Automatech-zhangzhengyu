@@ -3,21 +3,15 @@ using AutoMatech.DataRepository.Implements;
 using AutoMatech.DataRepository.Interface;
 using AutoMatech.DataRepository.Models;
 using Avalonia;
-using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using Live.Avalonia;
 using Unity;
-using Unity.Lifetime;
 
 namespace Automatech.AvaloniaApp
 {
-    /// <summary>
-    /// 实现ILiveView接口支持热重载
-    /// </summary>
-    public partial class App : Application, ILiveView
+    public partial class App : Application
     {
-        private UnityContainer Container;
+        private IUnityContainer Container;
         
         public App()
         {
@@ -44,8 +38,6 @@ namespace Automatech.AvaloniaApp
 
             base.OnFrameworkInitializationCompleted();
         }
-
-        public object CreateView(Window window) => new TextBlock() { Text = "hello world" };
 
         /// <summary>
         /// 配置服务

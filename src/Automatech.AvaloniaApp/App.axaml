@@ -13,6 +13,5 @@
         <FluentTheme />
         <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"></StyleInclude>
         <semi:SemiTheme Locale="zh-CN"></semi:SemiTheme>
-       
     </Application.Styles>
 </Application>

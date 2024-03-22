@@ -1,9 +1,9 @@
+using Automatech.AvaloniaApp.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text.Json;
-using Automatech.AvaloniaApp.Models;
 
 namespace Automatech.AvaloniaApp.Services;
 
@@ -16,23 +16,26 @@ public class MenuManager
     {
         _jsonSerializerOptions.WriteIndented = true;
     }
-    
+
     public static IList<TreeNode> Load()
     {
         IList<TreeNode> nodes = null;
-        
+
         try
         {
             using (FileStream stream = new FileStream(_menuConfig, FileMode.Open, FileAccess.Read))
             {
-                nodes = JsonSerializer.Deserialize<IList<TreeNode>>(stream, _jsonSerializerOptions);
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    nodes = JsonSerializer.Deserialize<IList<TreeNode>>(reader.ReadToEnd(), _jsonSerializerOptions);
+                }
             }
         }
         catch (Exception e)
         {
             Console.WriteLine($"MenuConfig.json文件加载异常。\n{e.Message}\n{e.StackTrace}");
         }
-        
+
         return nodes;
     }
 

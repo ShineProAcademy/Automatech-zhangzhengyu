@@ -13,7 +13,11 @@
         <vm:MainWindowViewModel></vm:MainWindowViewModel>
     </Design.DataContext>
     <Grid ColumnDefinitions="200 *">
-        <ContentControl Content="{Binding LeftMenu}"></ContentControl>
-        <ContentControl Grid.Column="1" Content="{Binding MainContent}"></ContentControl>
+        <Border Theme="{DynamicResource CardBorder}" Padding="8 4">
+            <ContentControl Content="{Binding LeftMenu}"></ContentControl>
+        </Border>
+        <Border Grid.Column="1" Theme="{DynamicResource CardBorder}" Padding="8 4">
+            <ContentControl Grid.Column="1" Content="{Binding MainContent}"></ContentControl>
+        </Border>
     </Grid>
 </Window>

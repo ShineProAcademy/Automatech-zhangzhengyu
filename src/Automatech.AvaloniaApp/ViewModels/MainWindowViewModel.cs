@@ -1,6 +1,4 @@
-using System;
 using Automatech.AvaloniaApp.Models;
-using Avalonia.ReactiveUI;
 using CommunityToolkit.Mvvm.Messaging;
 using Unity;
 

@@ -3,15 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech", "src\Automatech\Automatech.csproj", "{FD2E6F46-41AC-4D1B-AC16-14B77F0B670B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.AvaloniaApp", "src\Automatech.AvaloniaApp\Automatech.AvaloniaApp.csproj", "{584F75FE-274E-42BC-8C34-166645DB93DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Controls", "src\Automatech.Controls\Automatech.Controls.csproj", "{B19308FF-DFFB-4A90-9CB7-B5B042667BE6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.AvaloniaApp", "src\Automatech.AvaloniaApp\Automatech.AvaloniaApp.csproj", "{584F75FE-274E-42BC-8C34-166645DB93DE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.AvaloniaMvvmApp", "src\Automatech.AvaloniaMvvmApp\Automatech.AvaloniaMvvmApp.csproj", "{DBD17E6A-75F9-4581-8B58-C6C7FB36B6E3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMatech.DataRepository", "src\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMatech.DataRepository", "src\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,22 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD2E6F46-41AC-4D1B-AC16-14B77F0B670B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD2E6F46-41AC-4D1B-AC16-14B77F0B670B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD2E6F46-41AC-4D1B-AC16-14B77F0B670B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD2E6F46-41AC-4D1B-AC16-14B77F0B670B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B19308FF-DFFB-4A90-9CB7-B5B042667BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B19308FF-DFFB-4A90-9CB7-B5B042667BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B19308FF-DFFB-4A90-9CB7-B5B042667BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B19308FF-DFFB-4A90-9CB7-B5B042667BE6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{584F75FE-274E-42BC-8C34-166645DB93DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{584F75FE-274E-42BC-8C34-166645DB93DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584F75FE-274E-42BC-8C34-166645DB93DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584F75FE-274E-42BC-8C34-166645DB93DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBD17E6A-75F9-4581-8B58-C6C7FB36B6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBD17E6A-75F9-4581-8B58-C6C7FB36B6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBD17E6A-75F9-4581-8B58-C6C7FB36B6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBD17E6A-75F9-4581-8B58-C6C7FB36B6E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Release|Any CPU.ActiveCfg = Release|Any CPU

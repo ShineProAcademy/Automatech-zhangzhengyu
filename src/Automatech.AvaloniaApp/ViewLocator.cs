@@ -1,7 +1,6 @@
 using System;
 using Automatech.AvaloniaApp.ViewModels;
 using Avalonia.Controls;
-using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Templates;
 
 namespace Automatech.AvaloniaApp;
@@ -19,7 +18,7 @@ public class ViewLocator : IDataTemplate
             return null;
         }
 
-        string name = param.GetType().FullName?.Replace("ViewModel", "View", StringComparison.Ordinal);
+        string name = param.GetType().FullName?.Replace("ViewModel", "View");
 
         Type type = Type.GetType(name);
 

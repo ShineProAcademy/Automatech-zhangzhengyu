@@ -8,10 +8,7 @@
              xmlns:models="clr-namespace:Automatech.AvaloniaApp.Models"
              x:DataType="vm:LeftMenuViewModel"
              x:Class="Automatech.AvaloniaApp.Views.LeftMenuView">
-   <Border Theme="{DynamicResource CardBorder}" Padding="8 4">
-       <u:NavMenu ItemsSource="{Binding Nodes}" CommandBinding="{Binding Command}"
-          HeaderBinding="{Binding Header}"
-          SubMenuBinding="{Binding Children}" SelectedItem="{Binding }"/>
-       
-   </Border>
+   <u:NavMenu ItemsSource="{Binding Nodes}" CommandBinding="{Binding Command}"
+      HeaderBinding="{Binding Header}"
+      SubMenuBinding="{Binding Children}" SelectedItem="{Binding }"/>
 </UserControl>

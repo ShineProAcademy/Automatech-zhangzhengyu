@@ -1,6 +1,5 @@
 ﻿using Avalonia;
 using System;
-using Avalonia.ReactiveUI;
 
 namespace Automatech.AvaloniaApp
 {
@@ -18,7 +17,6 @@ namespace Automatech.AvaloniaApp
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
                 .WithInterFont()
-                .LogToTrace()
-                .UseReactiveUI();
+                .LogToTrace();
     }
 }

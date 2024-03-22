@@ -1,9 +1,8 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using System;
 using System.Collections.Generic;
 using System.Windows.Input;
-using Automatech.AvaloniaApp.ViewModels;
-using CommunityToolkit.Mvvm.Input;
-using CommunityToolkit.Mvvm.Messaging;
 
 namespace Automatech.AvaloniaApp.Models
 {
@@ -25,8 +24,8 @@ namespace Automatech.AvaloniaApp.Models
         }
 
         private void Navigate()
-        {
-            WeakReferenceMessenger.Default.Send<TreeNode>(this);
+        {         
+            WeakReferenceMessenger.Default.Send(this);
         }
 
         public IList<TreeNode> Children { get; private set; }
