@@ -3,8 +3,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Automatech.AvaloniaApp.Views.CheckBoxView">
-    <StackPanel Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <CheckBox IsChecked="True" Content="启用"></CheckBox>
-    </StackPanel>
+             x:Class="Automatech.AvaloniaApp.Views.FlyoutView">
+    <Button Content="悬浮框">
+        <Button.Flyout>
+            <Flyout>
+                <TextBlock Text="按钮的悬浮框"></TextBlock>
+            </Flyout>
+        </Button.Flyout>
+    </Button>
 </UserControl>

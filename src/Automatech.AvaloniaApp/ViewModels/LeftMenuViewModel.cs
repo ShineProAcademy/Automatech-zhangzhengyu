@@ -18,17 +18,14 @@ public class LeftMenuViewModel : ViewModelBase
         //Nodes = MenuManager.Load();
         RegisterTypes();
 
-        TreeNode def = new TreeNode("Ursa", null);
+        TreeNode def = new TreeNode("默认控件", null);
         def.Children.Add(new TreeNode("按钮", typeof(ButtonViewModel)));
         def.Children.Add(new TreeNode("输入框", typeof(TextBoxViewModel)));
-        def.Children.Add(new TreeNode("菜单", typeof(MenuViewModel)));
         def.Children.Add(new TreeNode("列表", typeof(ListViewModel)));
-        def.Children.Add(new TreeNode("勾选项", typeof(CheckBoxViewModel)));
-        def.Children.Add(new TreeNode("下拉", typeof(ComboBoxViewModel)));
-        def.Children.Add(new TreeNode("分组框", typeof(GroupBoxViewModel)));
-        def.Children.Add(new TreeNode("标签项", typeof(TabViewModel)));
-        def.Children.Add(new TreeNode("进度条", typeof(ProgressBarViewModel)));
-        def.Children.Add(new TreeNode("滑动条", typeof(SliderViewModel)));
+        def.Children.Add(new TreeNode("日期选择", typeof(PickerViewModel)));
+        def.Children.Add(new TreeNode("面板", typeof(PanelViewModel)));
+        def.Children.Add(new TreeNode("悬浮框", typeof(FlyoutViewModel)));
+        def.Children.Add(new TreeNode("样式Demo", typeof(StyleViewModel)));
         Nodes.Add(def);
     }
 
@@ -36,14 +33,11 @@ public class LeftMenuViewModel : ViewModelBase
     {
         _container.RegisterType(typeof(LeftMenuViewModel), new SingletonLifetimeManager());
         _container.RegisterType(typeof(ButtonViewModel), new SingletonLifetimeManager());
-        _container.RegisterType(typeof(CheckBoxViewModel), new SingletonLifetimeManager());
-        _container.RegisterType(typeof(ComboBoxViewModel), new SingletonLifetimeManager());
-        _container.RegisterType(typeof(MenuViewModel), new SingletonLifetimeManager());
         _container.RegisterType(typeof(ListViewModel), new SingletonLifetimeManager());
         _container.RegisterType(typeof(TextBoxViewModel), new SingletonLifetimeManager());
-        _container.RegisterType(typeof(GroupBoxViewModel), new SingletonLifetimeManager());
-        _container.RegisterType(typeof(TabViewModel), new SingletonLifetimeManager());
-        _container.RegisterType(typeof(ProgressBarViewModel), new SingletonLifetimeManager());
-        _container.RegisterType(typeof(SliderViewModel), new SingletonLifetimeManager());
+        _container.RegisterType(typeof(PickerViewModel), new SingletonLifetimeManager());
+        _container.RegisterType(typeof(PanelViewModel), new SingletonLifetimeManager());
+        _container.RegisterType(typeof(StyleViewModel), new SingletonLifetimeManager());
+        _container.RegisterType(typeof(FlyoutViewModel), new SingletonLifetimeManager());
     }
 }

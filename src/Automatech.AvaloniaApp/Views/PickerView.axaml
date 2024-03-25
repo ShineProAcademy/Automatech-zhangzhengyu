@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="Automatech.AvaloniaApp.Views.PickerView">
+    <TabControl>
+        <TabItem Header="Calendar Date Picker">
+            <Grid RowDefinitions="Auto Auto">
+                <CalendarDatePicker SelectedDate="2024-03-25" />
+            </Grid>
+        </TabItem>
+        <TabItem Header="Calendar">
+            <Grid RowDefinitions="Auto Auto">
+                <Calendar x:Name="Cal" DisplayMode="Month" SelectionMode="SingleDate" />
+                <TextBlock Grid.Row="1" Text="{Binding ElementName=Cal,Path=SelectedDate}" />
+            </Grid>
+        </TabItem>
+        <TabItem Header="ColorPicker">
+            <Grid ColumnDefinitions="Auto Auto" VerticalAlignment="Top">
+                <ColorPicker x:Name="Color" VerticalAlignment="Top" Margin="0 0 20 0"/>
+                <TextBlock Grid.Column="1" Text="{Binding ElementName=Color,Path=Color}" VerticalAlignment="Center"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="DatePicker">
+            <Grid RowDefinitions="Auto Auto">
+                <DatePicker x:Name="DatePicker"   />
+                <TextBlock Grid.Row="1" Text="{Binding ElementName=DatePicker,Path=SelectedDate}" />
+            </Grid>
+        </TabItem>
+        <TabItem Header="TimePicker">
+            <Grid RowDefinitions="Auto Auto">
+                <TimePicker x:Name="TimePicker"   />
+                <TextBlock Grid.Row="1" Text="{Binding ElementName=TimePicker,Path=SelectedTime}" />
+            </Grid>
+        </TabItem>
+   </TabControl>
+</UserControl>

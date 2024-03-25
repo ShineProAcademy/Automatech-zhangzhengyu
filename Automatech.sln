@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.AvaloniaApp", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMatech.DataRepository", "src\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.Avalonia.Controls", "src\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj", "{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.Avalonia.Behaviors", "src\Automatech.Avalonia.Behaviors\Automatech.Avalonia.Behaviors.csproj", "{4A24818F-9060-465E-95A3-F397792F88FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A24818F-9060-465E-95A3-F397792F88FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A24818F-9060-465E-95A3-F397792F88FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A24818F-9060-465E-95A3-F397792F88FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A24818F-9060-465E-95A3-F397792F88FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

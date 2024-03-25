@@ -8,10 +8,15 @@
         <local:ViewLocator></local:ViewLocator>
     </Application.DataTemplates>
     
+    <Application.Resources>
+        <FontFamily x:Key="IconFont">avares://Automatech.AvaloniaApp/Assets/fonts/iconfont.ttf#iconfont</FontFamily>
+    </Application.Resources>
+    
     <Application.Styles>
         <StyleInclude Source="avares://Semi.Avalonia/Themes/Index.axaml"></StyleInclude>
         <FluentTheme />
         <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"></StyleInclude>
+        <StyleInclude Source="avares://Avalonia.Controls.ColorPicker/Themes/Fluent/Fluent.xaml" />
         <semi:SemiTheme Locale="zh-CN"></semi:SemiTheme>
     </Application.Styles>
 </Application>

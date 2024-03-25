@@ -1,6 +1,6 @@
 namespace Automatech.AvaloniaApp.ViewModels;
 
-public class TabViewModel : ViewModelBase
+public class StyleViewModel : ViewModelBase
 {
     
 }

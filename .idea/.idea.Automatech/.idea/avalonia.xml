@@ -11,6 +11,8 @@
         <entry key="src/Automatech.AvaloniaApp/Views/Commad.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/CommandView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/DataGridView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/DateView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/FlyoutView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/GroupBoxView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/LeftMenu.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/LeftMenuView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
@@ -18,7 +20,11 @@
         <entry key="src/Automatech.AvaloniaApp/Views/MainFrame.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/MainView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/MenuView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/PanelView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/PickerView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/ProgressBar.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/ProgressBarView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
+        <entry key="src/Automatech.AvaloniaApp/Views/SliderView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/TabView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/TextBoxView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaMvvmApp/App.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />

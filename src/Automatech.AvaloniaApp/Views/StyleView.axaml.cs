@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Automatech.AvaloniaApp.Views;
 
-public partial class ProgressBarView : UserControl
+public partial class StyleView : UserControl
 {
-    public ProgressBarView()
+    public StyleView()
     {
         InitializeComponent();
     }

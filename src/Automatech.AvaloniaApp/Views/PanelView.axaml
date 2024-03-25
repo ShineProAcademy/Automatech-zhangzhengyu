@@ -1,0 +1,66 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Automatech.AvaloniaApp.Views.PanelView">
+    <TabControl>
+        <TabItem Header="SplitView">
+            <SplitView DisplayMode="CompactInline" IsPaneOpen="True" OpenPaneLength="200">
+                <SplitView.Pane>
+                   <Grid RowDefinitions="Auto *">
+                       <Grid ColumnDefinitions="* Auto">
+                           <TextBlock Text="设置" VerticalAlignment="Center"/>
+                           <ToggleButton Grid.Column="1" Margin="10" Padding="0" IsChecked="{Binding $parent[SplitView].IsPaneOpen}">
+                              <TextBlock Text="&#xeb8b;" FontSize="30" FontFamily="{StaticResource IconFont}" />
+                          </ToggleButton>
+                       </Grid>
+                   </Grid>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Text="Welcome!" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="20"/>
+                </SplitView.Content>
+            </SplitView>
+        </TabItem>
+        <TabItem Header="Border">
+           <Border Width="300" Height="300" Background="{DynamicResource ThemeAccentBrush}"
+                VerticalAlignment="Center" HorizontalAlignment="Center" BoxShadow="5 5 10 0 DarkGray">
+               <TextBlock Text="阴影效果" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+           </Border>
+        </TabItem>
+        <TabItem Header="Canvas">
+           <Canvas>
+               <Border Canvas.Left="100" Canvas.Top="100" ZIndex="1" Width="200" Height="200" Background="Yellow" Opacity="0.6"></Border>
+               <Border Canvas.Left="120" Canvas.Top="120" ZIndex="0" Width="200" Height="200" Background="Green"></Border>
+           </Canvas>
+        </TabItem>
+        <TabItem Header="Expander">
+            <Expander Header="功能块" VerticalAlignment="Top">
+               <ListBox>
+                   <ListBoxItem Content="功能1"/>
+                   <ListBoxItem Content="功能2"/>
+                   <ListBoxItem Content="功能3"/>
+                   <ListBoxItem Content="功能4"/>
+                   <ListBoxItem Content="功能5"/>
+               </ListBox>
+            </Expander>
+        </TabItem>
+        <TabItem Header="Releative Panel">
+            <RelativePanel>
+                <Rectangle x:Name="Item1" RelativePanel.AlignVerticalCenterWithPanel="True"  Height="180" Width="180" Fill="Yellow"/>
+                <Rectangle RelativePanel.AlignTopWith="Item1" Height="50" Width="50" Fill="Red"/>
+                <Rectangle RelativePanel.AlignLeftWith="Item1" Height="50" Width="50" Fill="OrangeRed"/>
+                <Rectangle RelativePanel.AlignBottomWith="Item1" Height="50" Width="50" Fill="Green"/>
+                <Rectangle RelativePanel.AlignRightWith="Item1" Height="50" Width="50" Fill="Blue"/>
+                <Rectangle RelativePanel.AlignHorizontalCenterWith="Item1" Height="50" Width="50" Fill="Purple"/>
+                <Rectangle RelativePanel.AlignVerticalCenterWith="Item1" Height="50" Width="50" Fill="Teal"/>
+                
+                <Rectangle x:Name="Item2" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="30" Height="50" Width="50" Fill="Yellow"/>
+                <Rectangle RelativePanel.LeftOf="Item2" RelativePanel.AlignVerticalCenterWithPanel="True" Height="50" Width="50" Fill="Red"/>
+                <Rectangle RelativePanel.RightOf="Item2" RelativePanel.AlignVerticalCenterWithPanel="True" Height="50" Width="50" Fill="OrangeRed"/>
+                <Rectangle RelativePanel.Above="Item2" RelativePanel.AlignHorizontalCenterWithPanel="True" Height="50" Width="50" Fill="Green"/>
+                <Rectangle RelativePanel.Below="Item2" RelativePanel.AlignHorizontalCenterWithPanel="True" Height="50" Width="50" Fill="Blue"/>
+            </RelativePanel>
+        </TabItem>
+    </TabControl>
+</UserControl>

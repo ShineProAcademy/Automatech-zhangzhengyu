@@ -1,6 +1,6 @@
 namespace Automatech.AvaloniaApp.ViewModels;
 
-public class MenuViewModel : ViewModelBase
+public class FlyoutViewModel : ViewModelBase
 {
     
 }

@@ -9,5 +9,35 @@
     <StackPanel Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
         <Button Height="30" Width="120" Content="功能1"></Button>
         <RadioButton Height="30" Width="120" Content="功能1"></RadioButton>
+        <ToggleSwitch Content="开关"></ToggleSwitch>
+        <ButtonSpinner ShowButtonSpinner="True" ButtonSpinnerLocation="Right" Content="0" Spin="Spinner_OnSpin">
+            
+        </ButtonSpinner>
+        <SplitButton Content="文件">
+            <SplitButton.Flyout>
+                <MenuFlyout>
+                    <MenuItem Header="新建"></MenuItem>
+                    <MenuItem Header="打开">
+                        <MenuItem Header="从本地打开"></MenuItem>
+                        <MenuItem Header="从远程打开"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="保存"></MenuItem>
+                    <MenuItem Header="另存为..."></MenuItem>
+                </MenuFlyout>
+            </SplitButton.Flyout>
+        </SplitButton>
+        <ToggleSplitButton>
+            <ToggleSplitButton.Flyout>
+                <MenuFlyout>
+                    <MenuItem Header="新建"></MenuItem>
+                    <MenuItem Header="打开">
+                        <MenuItem Header="从本地打开"></MenuItem>
+                        <MenuItem Header="从远程打开"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="保存"></MenuItem>
+                    <MenuItem Header="另存为..."></MenuItem>
+                </MenuFlyout>
+            </ToggleSplitButton.Flyout>
+        </ToggleSplitButton>
     </StackPanel>
 </UserControl>

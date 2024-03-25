@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1711334046220') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiantou_liebiaoshouqi_o:before {
+  content: "\eb8a";
+}
+
+.icon-jiantou_liebiaoxiangyou_o:before {
+  content: "\eb8b";
+}
+
+.icon-jiantou_liebiaoxiangzuo_o:before {
+  content: "\eb8e";
+}
+

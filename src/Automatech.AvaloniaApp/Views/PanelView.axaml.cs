@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Automatech.AvaloniaApp.Views;
 
-public partial class MenuView : UserControl
+public partial class PanelView : UserControl
 {
-    public MenuView()
+    public PanelView()
     {
         InitializeComponent();
     }

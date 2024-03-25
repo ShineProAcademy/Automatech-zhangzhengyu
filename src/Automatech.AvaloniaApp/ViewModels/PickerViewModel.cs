@@ -1,6 +1,6 @@
 namespace Automatech.AvaloniaApp.ViewModels;
 
-public class GroupBoxViewModel : ViewModelBase
+public class PickerViewModel : ViewModelBase
 {
     
 }

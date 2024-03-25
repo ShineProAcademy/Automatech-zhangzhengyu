@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Controls.ColorPicker" Version="11.0.10" />
     <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.10" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.10" />
@@ -32,5 +33,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\fonts\iconfont.json" />
+    <None Remove="Assets\fonts\iconfont.ttf" />
+    <AvaloniaResource Include="Assets\fonts\iconfont.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <AvaloniaResource Include="Assets\fonts\iconfont.ttf" />
   </ItemGroup>
 </Project>
