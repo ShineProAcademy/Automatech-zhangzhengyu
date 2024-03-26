@@ -4,11 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Automatech.AvaloniaApp.Views.FlyoutView">
-    <Button Content="悬浮框">
-        <Button.Flyout>
-            <Flyout>
-                <TextBlock Text="按钮的悬浮框"></TextBlock>
-            </Flyout>
-        </Button.Flyout>
-    </Button>
+    <Grid>
+        <Button Grid.Row="1" Content="悬浮框" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button.Flyout>
+                <Flyout>
+                    <TextBlock Text="按钮的悬浮框"></TextBlock>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
+    </Grid>
 </UserControl>

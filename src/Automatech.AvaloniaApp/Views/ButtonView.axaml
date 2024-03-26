@@ -3,11 +3,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:asset="clr-namespace:Automatech.AvaloniaApp.Assets.localization"
              xmlns:vm="clr-namespace:Automatech.AvaloniaApp.ViewModels"
              x:DataType="vm:ButtonViewModel"
              x:Class="Automatech.AvaloniaApp.Views.ButtonView">
     <StackPanel Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Button Height="30" Width="120" Content="功能1"></Button>
+        <Button Height="30" Width="120" Content="{x:Static asset:Resources.Avalonia_New}"></Button>
         <RadioButton Height="30" Width="120" Content="功能1"></RadioButton>
         <ToggleSwitch Content="开关"></ToggleSwitch>
         <ButtonSpinner ShowButtonSpinner="True" ButtonSpinnerLocation="Right" Content="0" Spin="Spinner_OnSpin">
@@ -16,26 +17,20 @@
         <SplitButton Content="文件">
             <SplitButton.Flyout>
                 <MenuFlyout>
-                    <MenuItem Header="新建"></MenuItem>
-                    <MenuItem Header="打开">
-                        <MenuItem Header="从本地打开"></MenuItem>
-                        <MenuItem Header="从远程打开"></MenuItem>
-                    </MenuItem>
-                    <MenuItem Header="保存"></MenuItem>
-                    <MenuItem Header="另存为..."></MenuItem>
+                    <MenuItem Header="新建" />
+                    <MenuItem Header="打开" Command="{Binding OpenFile}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"/>
+                    <MenuItem Header="保存" Command="{Binding SaveFile}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"/>
+                    <MenuItem Header="另存为..." />
                 </MenuFlyout>
             </SplitButton.Flyout>
         </SplitButton>
         <ToggleSplitButton>
             <ToggleSplitButton.Flyout>
                 <MenuFlyout>
-                    <MenuItem Header="新建"></MenuItem>
-                    <MenuItem Header="打开">
-                        <MenuItem Header="从本地打开"></MenuItem>
-                        <MenuItem Header="从远程打开"></MenuItem>
-                    </MenuItem>
-                    <MenuItem Header="保存"></MenuItem>
-                    <MenuItem Header="另存为..."></MenuItem>
+                    <MenuItem Header="新建" />
+                    <MenuItem Header="打开" Command="{Binding OpenFile}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" />
+                    <MenuItem Header="保存" Command="{Binding SaveFile}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"/>
+                    <MenuItem Header="另存为..." />
                 </MenuFlyout>
             </ToggleSplitButton.Flyout>
         </ToggleSplitButton>

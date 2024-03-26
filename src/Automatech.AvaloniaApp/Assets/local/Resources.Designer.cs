@@ -21,7 +21,7 @@ namespace Automatech.AvaloniaApp.Assets.localization {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -35,10 +35,10 @@ namespace Automatech.AvaloniaApp.Assets.localization {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Automatech.AvaloniaApp.Assets.localization.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Automatech.AvaloniaApp.Assets.local.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -50,7 +50,7 @@ namespace Automatech.AvaloniaApp.Assets.localization {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -60,18 +60,36 @@ namespace Automatech.AvaloniaApp.Assets.localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 复制.
+        /// </summary>
+        public static string Avalonia_Copy {
+            get {
+                return ResourceManager.GetString("Avalonia.Copy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 新建.
         /// </summary>
-        internal static string Avalonia_New {
+        public static string Avalonia_New {
             get {
                 return ResourceManager.GetString("Avalonia_New", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 粘贴.
+        /// </summary>
+        public static string Avalonia_Paste {
+            get {
+                return ResourceManager.GetString("Avalonia.Paste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 保存.
         /// </summary>
-        internal static string Avalonia_Save {
+        public static string Avalonia_Save {
             get {
                 return ResourceManager.GetString("Avalonia_Save", resourceCulture);
             }

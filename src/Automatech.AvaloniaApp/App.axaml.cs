@@ -1,3 +1,4 @@
+using System.Globalization;
 using Automatech.AvaloniaApp.ViewModels;
 using AutoMatech.DataRepository.Implements;
 using AutoMatech.DataRepository.Interface;
@@ -26,7 +27,7 @@ namespace Automatech.AvaloniaApp
 
         public override void OnFrameworkInitializationCompleted()
         {
-            
+            Assets.localization.Resources.Culture = new CultureInfo("en-US");
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
                 Container.RegisterType<MainWindowViewModel>();

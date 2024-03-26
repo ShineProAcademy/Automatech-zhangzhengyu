@@ -24,4 +24,10 @@
     <data name="Avalonia_New" xml:space="preserve">
         <value>New</value>
     </data>
+    <data name="Avalonia.Copy" xml:space="preserve">
+        <value>Copy</value>
+    </data>
+    <data name="Avalonia.Paste" xml:space="preserve">
+        <value>Copy</value>
+    </data>
 </root>

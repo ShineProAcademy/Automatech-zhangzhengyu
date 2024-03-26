@@ -12,13 +12,13 @@
                 <DataGridTextColumn Header="序号" Binding="{Binding StudentId}"></DataGridTextColumn>
                 <DataGridTextColumn Header="姓名" Binding="{Binding Name}"></DataGridTextColumn>
                 <DataGridTextColumn Header="性别" Binding="{Binding Sex}"></DataGridTextColumn>
-                <DataGridTextColumn Header="年龄" Binding="{Binding Age}"></DataGridTextColumn>
+                <DataGridTextColumn Header="年龄" Binding="{ReflectionBinding Age}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         
         <StackPanel>
              <TextBlock Text="Please select one option:" />
-           
+             <Button Content="修改" Command="{Binding Modify}"></Button>
         </StackPanel>
     </UniformGrid>
 </UserControl>

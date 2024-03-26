@@ -5,11 +5,11 @@ namespace AutoMatech.DataRepository.Models;
 /// </summary>
 public class Student
 {
-    public int StudentId { get; set; }
+    public int StudentId;
 
-    public string Name { get; set; }
+    public string Name;
 
-    public int Age { get; set; }
+    public int Age;
 
-    public bool Sex { get; set; }
+    public bool Sex;
 }

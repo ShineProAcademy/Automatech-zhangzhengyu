@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using Avalonia;
 using Avalonia.Controls.Primitives;
 using Avalonia.Media;
@@ -15,8 +16,14 @@ namespace Automatech.Avalonia.Controls
         public StatusControl()
         {
             Items = new ObservableCollection<StatusItem>();
+            StateProperty.Changed.AddClassHandler<StatusControl>(StatePropertyChanged);
+
         }
-        
+        private void StatePropertyChanged(StatusControl sender, AvaloniaPropertyChangedEventArgs arg)
+        {
+           
+        }
+
         public static readonly StyledProperty<string> StateProperty = AvaloniaProperty.Register<StatusControl, string>(
             "State");
 

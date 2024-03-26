@@ -1,3 +1,4 @@
+using System;
 using Automatech.AvaloniaApp.ViewModels;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
