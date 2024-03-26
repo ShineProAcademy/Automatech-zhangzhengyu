@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Automatech.AvaloniaApp.Views;
 
-public partial class StyleView : UserControl
+public partial class BindingView : UserControl
 {
-    public StyleView()
+    public BindingView()
     {
         InitializeComponent();
     }

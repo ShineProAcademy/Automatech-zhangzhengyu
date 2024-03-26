@@ -21,14 +21,14 @@ namespace Automatech.AvaloniaApp.Assets.localization {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources_en_US {
+    internal class Resources_ja_JP {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources_en_US() {
+        internal Resources_ja_JP() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace Automatech.AvaloniaApp.Assets.localization {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Automatech.AvaloniaApp.Assets.localization.Resources.en-US", typeof(Resources_en_US).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Automatech.AvaloniaApp.Assets.localization.Resources.ja-JP", typeof(Resources_ja_JP).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -56,6 +56,24 @@ namespace Automatech.AvaloniaApp.Assets.localization {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New.
+        /// </summary>
+        internal static string Avalonia_New {
+            get {
+                return ResourceManager.GetString("Avalonia_New", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string Avalonia_Save {
+            get {
+                return ResourceManager.GetString("Avalonia_Save", resourceCulture);
             }
         }
     }
