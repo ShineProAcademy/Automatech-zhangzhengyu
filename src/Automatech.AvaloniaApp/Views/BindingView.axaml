@@ -18,7 +18,8 @@
                    </Grid>
                </Grid>
               <!--wpf ElementName,Path-->
-              <TextBlock Text="{Binding ElementName=slider,Path=Value,StringFormat={}{0:0.000}}"/>
+              <!-- <TextBlock Text="{Binding ElementName=slider,Path=Value,StringFormat={}{0:0.000}}"/> -->
+              <TextBlock Text="{Binding #slider.Value,StringFormat={}{0:0.000}}"/>
               <!--#elemnet.property-->
               <ProgressBar Width="200" Minimum="0" Maximum="100" Value="{Binding #slider.Value}"/>
               <Slider x:Name="slider" Width="200" Minimum="0" Maximum="100"/>

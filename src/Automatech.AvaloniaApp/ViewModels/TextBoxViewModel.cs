@@ -1,5 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -14,6 +16,7 @@ public class TextBoxViewModel : ViewModelBase
     public TextBoxViewModel()
     {
         SubmitCommand = new RelayCommand(Submit, CanSubmit);
+        
         Source = new ObservableCollection<string>
         {
             "张三", "李四", "王五", "赵六"
@@ -21,7 +24,7 @@ public class TextBoxViewModel : ViewModelBase
 
         Age = 10;
     }
-
+    
     private void Submit()
     {
        Console.WriteLine(Input);
@@ -49,12 +52,26 @@ public class TextBoxViewModel : ViewModelBase
 
     private string _Input;
 
+    [Required]
+    [EmailAddress]
+    
     public string Input
     {
         get => _Input;
         set => SetProperty(ref _Input, value);
     }
-   
+
     public ICommand SubmitCommand { get; set; }
-    
+}
+
+public class DataErrorNotify : IDataErrorInfo
+{
+    public string Error { get; }
+
+    public string this[string columnName] => throw new NotImplementedException();
+}
+
+public class RangeValidationAttribute : ValidationAttribute 
+{
+   
 }

@@ -1,0 +1,146 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+             xmlns:control="clr-namespace:Automatech.Avalonia.Controls;assembly=Automatech.Avalonia.Controls"
+             x:Class="Automatech.AvaloniaApp.Views.StyleView">
+    <UserControl.Styles>
+        <!--None-->
+        <Style Selector="Button">
+            <Setter Property="FontFamily" Value="Microsoft Ya Hei" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Background" Value="Red"/>
+            </Style>
+            <Style Selector="^:pressed /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Background" Value="Green"/>
+            </Style>
+        </Style>
+        
+        <!--Type#Name-->
+        <Style Selector="Button#BorderBtn">
+            <Setter Property="BorderBrush" Value="Brown"/>
+            <Setter Property="BorderThickness" Value="3" />
+        </Style>
+        
+        <!--Type[Property=Value]-->
+        <!-- <Style Selector="Button[Name=BorderBtn]"> -->
+        <!--     <Setter Property="BorderBrush" Value="Yellow"/> -->
+        <!-- </Style> -->
+        
+        <!--Type.Class-->
+        <Style Selector="Button.Blue">
+            <Setter Property="Background" Value="Blue" />
+        </Style>
+        
+        <!--Type.Class-->
+        <Style Selector="Button.Arc">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                           <Border>
+                               <Grid>
+                                   <Ellipse Fill="{TemplateBinding Background}"/>
+                                   <ContentPresenter Content="{TemplateBinding Content}"
+                                        VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                               </Grid>
+                           </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style Selector="Button.Arc:pointerover">
+            <Setter Property="Background" Value="Red"></Setter>
+        </Style>
+        <Style Selector="Button:pressed">
+            <Setter Property="Background" Value="Green"></Setter>
+        </Style>
+        
+        <!--Type.Class.Class-->
+        <Style Selector="Button.Arc.Blue">
+            <Setter Property="Background" Value="Blue" />
+        </Style>
+        
+        <!--Type Type-->
+        <Style Selector="UniformGrid Button">
+            <Setter Property="Background" Value="Brown"/>
+        </Style>
+        
+        <!--定义其他依赖库中的控件，用|分割映射名和控件类型-->
+        <!-- <Style Selector="control|StatusControl"></Style> -->
+        
+        <!--Type > Type-->
+        <!-- <Style Selector="UniformGrid > Button"> -->
+        <!--     <Setter Property="Background" Value="Brown"/> -->
+        <!-- </Style> -->
+        
+        <!--Type  Type /template/ Type-->
+        <!-- <Style Selector="UniformGrid Button /template/ ContentPresenter"> -->
+        <!--     <Setter Property="Foreground" Value="Red"/> -->
+        <!-- </Style> -->
+        
+        <!-- <Style Selector="Button[(DockPanel.Dock)=Top]"> -->
+        <!--     <Setter Property="Background" Value="Brown"/> -->
+        <!-- </Style> -->
+        
+        <!-- <Style Selector="DockPanel Button:not(.btn1)"> -->
+        <!--     <Setter Property="Background" Value="Brown"/> -->
+        <!-- </Style> -->
+        
+        <!-- <Style Selector="Grid Button, TextBox"> -->
+        <!--     <Setter Property="Foreground" Value="Red"/> -->
+        <!-- </Style> -->
+        
+        <!-- <Style Selector="ListBoxItem:nth-child(2n+1)"> -->
+        <!--     <Setter Property="Foreground" Value="Red"/> -->
+        <!--     <Setter Property="Background" Value="AliceBlue"/> -->
+        <!-- </Style> -->
+        
+        <!-- <Style Selector="ListBoxItem:nth-last-child(odd)"> -->
+        <!--     <Setter Property="Foreground" Value="Red"/> -->
+        <!--     <Setter Property="Background" Value="AliceBlue"/> -->
+        <!-- </Style> -->
+        
+    </UserControl.Styles>
+    <StackPanel Margin="10" Spacing="10">
+        <StackPanel Margin="10" Spacing="10" Orientation="Horizontal">
+            <Button Height="100" Content="按钮2" Width="100" />
+            <Button Classes="Arc" Height="100" Content="按钮1" Width="100" />
+            <Button Classes="Blue" Height="100" Content="按钮1" Width="100" />
+            <Button Classes="Arc Blue" Height="100" Content="按钮1" Width="100" />
+            <Button Name="BorderBtn" Height="100" Content="按钮4" Width="100" />
+            <UniformGrid >
+                <Button Height="50" Content="按钮1" Width="50" />
+                <Border>
+                   <Button Classes="Arc" Height="50" Content="按钮1" Width="50" />
+                </Border>
+                <Button Height="50" Content="按钮1" Width="50" />
+                <Button Height="50" Content="按钮1" Width="50" />
+            </UniformGrid>
+        </StackPanel>
+        <DockPanel>
+            <Button Classes="btn1" DockPanel.Dock="Top" Height="50" Content="按钮1" Width="50" />
+            <Button DockPanel.Dock="Left" Height="50" Content="按钮1" Width="50" />
+            <Button DockPanel.Dock="Bottom" Height="50" Content="按钮1" Width="50" />
+            <Button DockPanel.Dock="Right" Height="50" Content="按钮1" Width="50" />
+        </DockPanel>
+        <Grid RowDefinitions="Auto Auto">
+            <Button Content="test" HorizontalAlignment="Center" />
+            <TextBox Grid.Row="1" Text="input" Height="50" Width="80" />
+        </Grid>
+        <Grid>
+            <ListBox>
+                <ListBoxItem Content="1"/>
+                <ListBoxItem Content="2"/>
+                <ListBoxItem Content="3"/>
+                <ListBoxItem Content="4"/>
+                <ListBoxItem Content="5"/>
+                <ListBoxItem Content="6"/>
+                <ListBoxItem Content="7"/>
+            </ListBox>
+        </Grid>
+    </StackPanel>
+    
+</UserControl>

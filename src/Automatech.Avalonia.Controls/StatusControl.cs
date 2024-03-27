@@ -11,6 +11,7 @@ namespace Automatech.Avalonia.Controls
     /// </summary>
     public class StatusControl : TemplatedControl
     {
+
         public ObservableCollection<StatusItem> Items { get; private set; }
 
         public StatusControl()

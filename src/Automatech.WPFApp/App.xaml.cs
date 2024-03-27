@@ -13,5 +13,6 @@ namespace Automatech.WPFApp
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

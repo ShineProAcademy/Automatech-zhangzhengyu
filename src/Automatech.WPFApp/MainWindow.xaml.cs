@@ -2,6 +2,7 @@
 using System.Reactive;
 using System.Reactive.Subjects;
 using System.Windows;
+using Automatech.WPFApp.ViewModels;
 using Console = System.Console;
 
 namespace Automatech.WPFApp
@@ -11,15 +12,11 @@ namespace Automatech.WPFApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Subject<string> _subject = new Subject<string>();
-        
         public MainWindow()
         {
             InitializeComponent();
-            _subject.Subscribe(value => Console.WriteLine("fds"));
-        }
-        
-    }
+            this.DataContext = new MainWindowViewModel();
 
-    
+        }
+    }
 }

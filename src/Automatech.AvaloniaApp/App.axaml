@@ -4,6 +4,8 @@
              x:Class="Automatech.AvaloniaApp.App"
              xmlns:local="clr-namespace:Automatech.AvaloniaApp"
              RequestedThemeVariant="Default">
+    
+
     <Application.DataTemplates>
         <local:ViewLocator></local:ViewLocator>
     </Application.DataTemplates>

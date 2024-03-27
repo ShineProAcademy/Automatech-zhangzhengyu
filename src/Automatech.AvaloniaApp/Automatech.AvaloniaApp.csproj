@@ -32,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj" />
     <ProjectReference Include="..\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj" />
   </ItemGroup>
 

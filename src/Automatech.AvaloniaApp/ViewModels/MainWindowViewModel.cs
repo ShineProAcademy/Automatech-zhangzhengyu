@@ -1,3 +1,4 @@
+using System;
 using Automatech.AvaloniaApp.Models;
 using CommunityToolkit.Mvvm.Messaging;
 using Unity;
@@ -51,7 +52,7 @@ public class MainWindowViewModel : ViewModelBase
         }
         else
         {
-            return;
+            throw new Exception("该ViewModel没有继承自ViewModelBase");
         }
     }
 }

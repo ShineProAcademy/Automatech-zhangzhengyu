@@ -25,7 +25,8 @@ public class LeftMenuViewModel : ViewModelBase
         def.Children.Add(new TreeNode("日期选择", typeof(PickerViewModel)));
         def.Children.Add(new TreeNode("面板", typeof(PanelViewModel)));
         def.Children.Add(new TreeNode("悬浮框", typeof(FlyoutViewModel)));
-        def.Children.Add(new TreeNode("样式Demo", typeof(BindingViewModel)));
+        def.Children.Add(new TreeNode("绑定", typeof(BindingViewModel)));
+        def.Children.Add(new TreeNode("样式", typeof(StyleViewModel)));
         Nodes.Add(def);
     }
 
@@ -39,5 +40,6 @@ public class LeftMenuViewModel : ViewModelBase
         _container.RegisterType(typeof(PanelViewModel), new SingletonLifetimeManager());
         _container.RegisterType(typeof(BindingViewModel), new SingletonLifetimeManager());
         _container.RegisterType(typeof(FlyoutViewModel), new SingletonLifetimeManager());
+        _container.RegisterType(typeof(StyleViewModel), new SingletonLifetimeManager());
     }
 }
