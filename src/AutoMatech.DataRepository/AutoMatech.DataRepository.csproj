@@ -3,7 +3,7 @@
     <PropertyGroup>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <TargetFrameworks>net8.0;netcoreapp3.1;</TargetFrameworks>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
         <PlatformTarget>AnyCPU</PlatformTarget>
 		<LangVersion>12.0</LangVersion>
