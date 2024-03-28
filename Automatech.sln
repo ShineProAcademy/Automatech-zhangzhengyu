@@ -5,25 +5,17 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.AvaloniaApp", "src\Automatech.AvaloniaApp\Automatech.AvaloniaApp.csproj", "{584F75FE-274E-42BC-8C34-166645DB93DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMatech.DataRepository", "src\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Controls", "src\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj", "{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Behaviors", "src\Automatech.Avalonia.Behaviors\Automatech.Avalonia.Behaviors.csproj", "{4A24818F-9060-465E-95A3-F397792F88FB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.WPFApp", "src\Automatech.WPFApp\Automatech.WPFApp.csproj", "{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{B6AF7352-45A2-440C-AC85-760100153FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.CrossPlatformApp", "src\Automatech.CrossPlatformApp\Automatech.CrossPlatformApp\Automatech.CrossPlatformApp.csproj", "{00FDC9ED-2C0F-46E4-831A-FB5343B84812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Behaviors", "src\Automatech.Avalonia.Behaviors\Automatech.Avalonia.Behaviors.csproj", "{81D1A0E0-8D01-426F-9E25-32DFE34985F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.CrossPlatformApp.Android", "src\Automatech.CrossPlatformApp\Automatech.CrossPlatformApp.Android\Automatech.CrossPlatformApp.Android.csproj", "{B75709CA-9F9C-48C5-9B1B-F2AA8110F52F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Controls", "src\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj", "{6E590323-C90E-4140-A3E7-A8D7904E6A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.CrossPlatformApp.Desktop", "src\Automatech.CrossPlatformApp\Automatech.CrossPlatformApp.Desktop\Automatech.CrossPlatformApp.Desktop.csproj", "{303E5D87-CB46-408F-B938-F17A726B9ECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMatech.DataRepository", "src\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{E49089FB-F5D8-48BD-AE9E-CF218203AE99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.CrossPlatformApp.iOS", "src\Automatech.CrossPlatformApp\Automatech.CrossPlatformApp.iOS\Automatech.CrossPlatformApp.iOS.csproj", "{7731E0AF-F8B3-4C9A-8F2B-FC332FE37298}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.CrossPlatformApp.Browser", "src\Automatech.CrossPlatformApp\Automatech.CrossPlatformApp.Browser\Automatech.CrossPlatformApp.Browser.csproj", "{6EBDA576-DFEE-4390-B8FF-4EAAFED21925}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.Avalonia.Theme", "src\Automatech.Avalonia.Theme\Automatech.Avalonia.Theme.csproj", "{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,46 +27,26 @@ Global
 		{584F75FE-274E-42BC-8C34-166645DB93DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584F75FE-274E-42BC-8C34-166645DB93DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584F75FE-274E-42BC-8C34-166645DB93DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A24818F-9060-465E-95A3-F397792F88FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A24818F-9060-465E-95A3-F397792F88FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A24818F-9060-465E-95A3-F397792F88FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A24818F-9060-465E-95A3-F397792F88FB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00FDC9ED-2C0F-46E4-831A-FB5343B84812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00FDC9ED-2C0F-46E4-831A-FB5343B84812}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00FDC9ED-2C0F-46E4-831A-FB5343B84812}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00FDC9ED-2C0F-46E4-831A-FB5343B84812}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B75709CA-9F9C-48C5-9B1B-F2AA8110F52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B75709CA-9F9C-48C5-9B1B-F2AA8110F52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B75709CA-9F9C-48C5-9B1B-F2AA8110F52F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{B75709CA-9F9C-48C5-9B1B-F2AA8110F52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B75709CA-9F9C-48C5-9B1B-F2AA8110F52F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B75709CA-9F9C-48C5-9B1B-F2AA8110F52F}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{303E5D87-CB46-408F-B938-F17A726B9ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{303E5D87-CB46-408F-B938-F17A726B9ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{303E5D87-CB46-408F-B938-F17A726B9ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{303E5D87-CB46-408F-B938-F17A726B9ECB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7731E0AF-F8B3-4C9A-8F2B-FC332FE37298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7731E0AF-F8B3-4C9A-8F2B-FC332FE37298}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7731E0AF-F8B3-4C9A-8F2B-FC332FE37298}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{7731E0AF-F8B3-4C9A-8F2B-FC332FE37298}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7731E0AF-F8B3-4C9A-8F2B-FC332FE37298}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7731E0AF-F8B3-4C9A-8F2B-FC332FE37298}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{6EBDA576-DFEE-4390-B8FF-4EAAFED21925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EBDA576-DFEE-4390-B8FF-4EAAFED21925}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EBDA576-DFEE-4390-B8FF-4EAAFED21925}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EBDA576-DFEE-4390-B8FF-4EAAFED21925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D1A0E0-8D01-426F-9E25-32DFE34985F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D1A0E0-8D01-426F-9E25-32DFE34985F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D1A0E0-8D01-426F-9E25-32DFE34985F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D1A0E0-8D01-426F-9E25-32DFE34985F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E590323-C90E-4140-A3E7-A8D7904E6A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E590323-C90E-4140-A3E7-A8D7904E6A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E590323-C90E-4140-A3E7-A8D7904E6A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E590323-C90E-4140-A3E7-A8D7904E6A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E49089FB-F5D8-48BD-AE9E-CF218203AE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49089FB-F5D8-48BD-AE9E-CF218203AE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49089FB-F5D8-48BD-AE9E-CF218203AE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49089FB-F5D8-48BD-AE9E-CF218203AE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

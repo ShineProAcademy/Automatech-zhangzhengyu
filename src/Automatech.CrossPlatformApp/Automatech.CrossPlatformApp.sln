@@ -18,6 +18,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Behaviors", "..\Automatech.Avalonia.Behaviors\Automatech.Avalonia.Behaviors.csproj", "{2EE01D4F-8EBB-40A3-AF15-25B881EEF294}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Controls", "..\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj", "{D45C0E90-1C71-4CE6-BE6F-C75983CFF196}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMatech.DataRepository", "..\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{7166599C-E9EE-47C8-960F-AD6F0A7DBDB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AvaloniaUI", "AvaloniaUI", "{7BAEB908-320E-4BC4-A668-269BE00FE358}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Theme", "..\Automatech.Avalonia.Theme\Automatech.Avalonia.Theme.csproj", "{4513EB55-2B3B-4156-9863-4FE829185A5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataRepository", "DataRepository", "{45709E3B-4430-46D6-9C2A-54CD06FC8783}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,9 +56,31 @@ Global
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE01D4F-8EBB-40A3-AF15-25B881EEF294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE01D4F-8EBB-40A3-AF15-25B881EEF294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE01D4F-8EBB-40A3-AF15-25B881EEF294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE01D4F-8EBB-40A3-AF15-25B881EEF294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45C0E90-1C71-4CE6-BE6F-C75983CFF196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45C0E90-1C71-4CE6-BE6F-C75983CFF196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45C0E90-1C71-4CE6-BE6F-C75983CFF196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45C0E90-1C71-4CE6-BE6F-C75983CFF196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7166599C-E9EE-47C8-960F-AD6F0A7DBDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7166599C-E9EE-47C8-960F-AD6F0A7DBDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7166599C-E9EE-47C8-960F-AD6F0A7DBDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7166599C-E9EE-47C8-960F-AD6F0A7DBDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4513EB55-2B3B-4156-9863-4FE829185A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4513EB55-2B3B-4156-9863-4FE829185A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4513EB55-2B3B-4156-9863-4FE829185A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4513EB55-2B3B-4156-9863-4FE829185A5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EE01D4F-8EBB-40A3-AF15-25B881EEF294} = {7BAEB908-320E-4BC4-A668-269BE00FE358}
+		{D45C0E90-1C71-4CE6-BE6F-C75983CFF196} = {7BAEB908-320E-4BC4-A668-269BE00FE358}
+		{7166599C-E9EE-47C8-960F-AD6F0A7DBDB4} = {45709E3B-4430-46D6-9C2A-54CD06FC8783}
+		{4513EB55-2B3B-4156-9863-4FE829185A5E} = {7BAEB908-320E-4BC4-A668-269BE00FE358}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83CB65B8-011F-4ED7-BCD3-A6CFA935EF7E}

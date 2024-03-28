@@ -32,11 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj" />
-    <ProjectReference Include="..\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Assets\fonts\iconfont.json" />
     <None Remove="Assets\fonts\iconfont.ttf" />
     <AvaloniaResource Include="Assets\fonts\iconfont.json">
