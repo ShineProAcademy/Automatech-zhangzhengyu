@@ -1,10 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Windows.Input;
-using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
 namespace Automatech.AvaloniaApp.ViewModels;
@@ -27,15 +24,23 @@ public class TextBoxViewModel : ViewModelBase
     
     private void Submit()
     {
-       Console.WriteLine(Input);
-       Input = null;
+        ValidateAllProperties();
+        if (HasErrors)
+        {
+            Console.WriteLine("输入有错误!");
+        }
+        else
+        {
+            Console.WriteLine(Input);
+            Input = null;
+        }
     }
 
     private bool CanSubmit()
     {
         if (string.IsNullOrWhiteSpace(Input))
         {
-            return false;
+            return true;
         }
         else
         {
@@ -44,6 +49,7 @@ public class TextBoxViewModel : ViewModelBase
     }
 
     private int _Age;
+    
     public int Age
     {
         get => _Age;
@@ -51,10 +57,8 @@ public class TextBoxViewModel : ViewModelBase
     }
 
     private string _Input;
-
-    [Required]
-    [EmailAddress]
     
+    [Required]
     public string Input
     {
         get => _Input;
@@ -62,16 +66,4 @@ public class TextBoxViewModel : ViewModelBase
     }
 
     public ICommand SubmitCommand { get; set; }
-}
-
-public class DataErrorNotify : IDataErrorInfo
-{
-    public string Error { get; }
-
-    public string this[string columnName] => throw new NotImplementedException();
-}
-
-public class RangeValidationAttribute : ValidationAttribute 
-{
-   
 }

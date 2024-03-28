@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.Avalonia.Behavio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.WPFApp", "src\Automatech.WPFApp\Automatech.WPFApp.csproj", "{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{B6AF7352-45A2-440C-AC85-760100153FA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,5 +47,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA5B5428-4451-4D2B-9310-227F834D3922}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{584F75FE-274E-42BC-8C34-166645DB93DE} = {B6AF7352-45A2-440C-AC85-760100153FA2}
+		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00} = {B6AF7352-45A2-440C-AC85-760100153FA2}
 	EndGlobalSection
 EndGlobal
