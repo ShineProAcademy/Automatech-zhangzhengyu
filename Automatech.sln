@@ -7,13 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.AvaloniaApp", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMatech.DataRepository", "src\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{74541373-BEA6-4EB5-B6CF-93FEC2C48E00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.Avalonia.Controls", "src\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj", "{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Controls", "src\Automatech.Avalonia.Controls\Automatech.Avalonia.Controls.csproj", "{4A8B943C-C9FC-4CBB-8852-5FFE673DCC5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.Avalonia.Behaviors", "src\Automatech.Avalonia.Behaviors\Automatech.Avalonia.Behaviors.csproj", "{4A24818F-9060-465E-95A3-F397792F88FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Behaviors", "src\Automatech.Avalonia.Behaviors\Automatech.Avalonia.Behaviors.csproj", "{4A24818F-9060-465E-95A3-F397792F88FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.WPFApp", "src\Automatech.WPFApp\Automatech.WPFApp.csproj", "{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.WPFApp", "src\Automatech.WPFApp\Automatech.WPFApp.csproj", "{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{B6AF7352-45A2-440C-AC85-760100153FA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.WindowApp", "src\Automatech.WindowApp\Automatech.WindowApp.csproj", "{82807874-60C7-4C27-9ECB-526CC78B2E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.AndroidApp", "src\Automatech.AndroidApp\Automatech.AndroidApp.csproj", "{B48A538E-FAAA-4575-A3AB-31FF4A6EF865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,15 +45,25 @@ Global
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82807874-60C7-4C27-9ECB-526CC78B2E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82807874-60C7-4C27-9ECB-526CC78B2E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82807874-60C7-4C27-9ECB-526CC78B2E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82807874-60C7-4C27-9ECB-526CC78B2E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48A538E-FAAA-4575-A3AB-31FF4A6EF865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48A538E-FAAA-4575-A3AB-31FF4A6EF865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48A538E-FAAA-4575-A3AB-31FF4A6EF865}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B48A538E-FAAA-4575-A3AB-31FF4A6EF865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48A538E-FAAA-4575-A3AB-31FF4A6EF865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48A538E-FAAA-4575-A3AB-31FF4A6EF865}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DA5B5428-4451-4D2B-9310-227F834D3922}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{584F75FE-274E-42BC-8C34-166645DB93DE} = {B6AF7352-45A2-440C-AC85-760100153FA2}
 		{5F5D957F-C710-46B2-94A3-B1C0FACF3F00} = {B6AF7352-45A2-440C-AC85-760100153FA2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA5B5428-4451-4D2B-9310-227F834D3922}
 	EndGlobalSection
 EndGlobal
