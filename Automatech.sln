@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.AvaloniaApp", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.WPFApp", "src\Automatech.WPFApp\Automatech.WPFApp.csproj", "{5F5D957F-C710-46B2-94A3-B1C0FACF3F00}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{B6AF7352-45A2-440C-AC85-760100153FA2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B6AF7352-45A2-440C-AC85-760100153FA2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Behaviors", "src\Automatech.Avalonia.Behaviors\Automatech.Avalonia.Behaviors.csproj", "{81D1A0E0-8D01-426F-9E25-32DFE34985F5}"
 EndProject
@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Control
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMatech.DataRepository", "src\AutoMatech.DataRepository\AutoMatech.DataRepository.csproj", "{E49089FB-F5D8-48BD-AE9E-CF218203AE99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.Avalonia.Theme", "src\Automatech.Avalonia.Theme\Automatech.Avalonia.Theme.csproj", "{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automatech.Avalonia.Theme", "src\Automatech.Avalonia.Theme\Automatech.Avalonia.Theme.csproj", "{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automatech.AvaloniaDemo", "src\Automatech.AvaloniaDemo\Automatech.AvaloniaDemo.csproj", "{83CA03EE-FE46-4E83-AD4C-471224CA4D6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35DD6CF8-474F-49F7-9846-2E6B7B1AA710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CA03EE-FE46-4E83-AD4C-471224CA4D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CA03EE-FE46-4E83-AD4C-471224CA4D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CA03EE-FE46-4E83-AD4C-471224CA4D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CA03EE-FE46-4E83-AD4C-471224CA4D6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

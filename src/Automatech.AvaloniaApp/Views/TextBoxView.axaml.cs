@@ -12,5 +12,6 @@ public partial class TextBoxView : UserControl
     public TextBoxView()
     {
         InitializeComponent();
+        
     }
 }
