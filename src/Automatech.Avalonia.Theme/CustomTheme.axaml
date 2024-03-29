@@ -1,0 +1,23 @@
+<Styles x:Class="Automatech.Avalonia.Theme.CustomTheme"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <Styles.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <MergeResourceInclude x:Key="Dark" Source="Theme/Default/_Index.axaml" />
+            </ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="Theme/Font.axaml" />
+                <ResourceInclude Source="Theme/Size.axaml" />
+                <ResourceInclude Source="Theme/Geometry.axaml" />
+                <ResourceInclude Source="ControlTheme/_Index.axaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Styles.Resources>
+</Styles>

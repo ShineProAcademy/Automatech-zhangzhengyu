@@ -1,0 +1,107 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <SolidColorBrush x:Key="LightPrimaryBrush" 
+        Color="{DynamicResource LightPrimaryColor}" />
+    <LinearGradientBrush x:Key="PrimaryBrush"  StartPoint="0,0" EndPoint="1,0">
+        <GradientStop  Offset="0" Color="{DynamicResource PrimaryColor}" />
+        <GradientStop  Offset="1" Color="{DynamicResource DarkPrimaryColor}" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkPrimaryBrush" 
+        Color="{DynamicResource DarkPrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryTextBrush" 
+        Color="{DynamicResource PrimaryTextColor}" />
+    <SolidColorBrush x:Key="ButtonPrimaryTextBrush" 
+        Color="{DynamicResource ButtonPrimaryTextColor}" />
+    <SolidColorBrush x:Key="SecondaryTextBrush" 
+        Color="{DynamicResource SecondaryTextColor}" />
+    <SolidColorBrush x:Key="ThirdlyTextBrush" 
+        Color="{DynamicResource ThirdlyTextColor}" />
+    <SolidColorBrush x:Key="ReverseTextBrush" 
+        Color="{DynamicResource ReverseTextColor}" />
+    <SolidColorBrush x:Key="TextIconBrush" 
+        Color="{DynamicResource TextIconColor}" />
+    <SolidColorBrush x:Key="ToggleIconBrush" 
+        Color="{DynamicResource ToggleIconColor}" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundBrush" 
+        Color="{DynamicResource ToggleButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" 
+        Color="{DynamicResource ButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="ButtonBackgroundBrushHover" 
+        Color="{DynamicResource ButtonBackgroundColorHover}" />
+    <SolidColorBrush x:Key="BackgroundHighlightBrush"
+        Color="{DynamicResource BackgroundHighlightColor}" />
+    <SolidColorBrush x:Key="ButtonBorderBrush"
+        Color="{DynamicResource ButtonBorderColor}" />
+    <SolidColorBrush x:Key="BorderHighlightBrush"
+        Color="{DynamicResource BorderHighlightColor}" />
+    <SolidColorBrush x:Key="BorderBrush"
+        Color="{DynamicResource BorderColor}" />
+    <SolidColorBrush x:Key="SecondaryBorderBrush"
+        Color="{DynamicResource SecondaryBorderColor}" />
+    <SolidColorBrush x:Key="BackgroundBrush"
+        Color="{DynamicResource BackgroundColor}" />
+    <SolidColorBrush x:Key="RegionBrush"
+        Color="{DynamicResource RegionColor}" />
+    <SolidColorBrush x:Key="SecondaryRegionBrush"
+        Color="{DynamicResource SecondaryRegionColor}" />
+    <SolidColorBrush x:Key="ThirdlyRegionBrush"
+        Color="{DynamicResource ThirdlyRegionColor}" />
+    <LinearGradientBrush x:Key="TitleBrush"  StartPoint="0,0" EndPoint="1,0">
+        <GradientStop  Offset="0" Color="{DynamicResource TitleColor}" />
+        <GradientStop  Offset="1" Color="{DynamicResource SecondaryTitleColor}" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DefaultBrush"
+        Color="{DynamicResource DefaultColor}" />
+    <SolidColorBrush x:Key="DarkDefaultBrush"
+        Color="{DynamicResource DarkDefaultColor}" />
+    <SolidColorBrush x:Key="LightDangerBrush"
+        Color="{DynamicResource LightDangerColor}" />
+    <LinearGradientBrush x:Key="DangerBrush"  StartPoint="0,0" EndPoint="1,0">
+        <GradientStop  Offset="0" Color="{DynamicResource DangerColor}" />
+        <GradientStop  Offset="1" Color="{DynamicResource DarkDangerColor}" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkDangerBrush"
+        Color="{DynamicResource DarkDangerColor}" />
+    <SolidColorBrush x:Key="LightWarningBrush"
+        Color="{DynamicResource LightWarningColor}" />
+    <LinearGradientBrush x:Key="WarningBrush"  StartPoint="0,0" EndPoint="1,0">
+        <GradientStop  Offset="0" Color="{DynamicResource WarningColor}" />
+        <GradientStop  Offset="1" Color="{DynamicResource DarkWarningColor}" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkWarningBrush"
+        Color="{DynamicResource DarkWarningColor}" />
+    <SolidColorBrush x:Key="LightInfoBrush"
+        Color="{DynamicResource LightInfoColor}" />
+    <LinearGradientBrush x:Key="InfoBrush"  StartPoint="0,0" EndPoint="1,0">
+        <GradientStop  Offset="0" Color="{DynamicResource InfoColor}" />
+        <GradientStop  Offset="1" Color="{DynamicResource DarkInfoColor}" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkInfoBrush"
+        Color="{DynamicResource DarkInfoColor}" />
+    <SolidColorBrush x:Key="LightSuccessBrush"
+        Color="{DynamicResource LightSuccessColor}" />
+    <LinearGradientBrush x:Key="SuccessBrush"  StartPoint="0,0" EndPoint="1,0">
+        <GradientStop  Offset="0" Color="{DynamicResource SuccessColor}" />
+        <GradientStop  Offset="1" Color="{DynamicResource DarkSuccessColor}" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkSuccessBrush"
+        Color="{DynamicResource DarkSuccessColor}" />
+    <SolidColorBrush x:Key="AccentBrush"
+        Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="DarkAccentBrush"
+        Color="{DynamicResource DarkAccentColor}" />
+    <SolidColorBrush x:Key="Accent2Brush"
+        Color="{DynamicResource Accent2Color}" />
+    <LinearGradientBrush x:Key="GradientAccentBrush" StartPoint="0.08,0.036" EndPoint="0.732,0.029">
+        <GradientStop Offset="0" Color="{DynamicResource AccentColor}" />
+        <GradientStop Offset="0.522" Color="#80479BFB" />
+        <GradientStop Offset="1" Color="#00479BFB" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkMaskBrush"
+        Color="{DynamicResource DarkMaskColor}" />
+    <SolidColorBrush x:Key="DarkOpacityBrush"
+        Color="{DynamicResource DarkOpacityColor}" />
+    <SolidColorBrush x:Key="AlarmBrush"
+        Color="{DynamicResource AlarmColor}" />
+</ResourceDictionary>

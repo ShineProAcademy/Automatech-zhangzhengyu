@@ -13,7 +13,7 @@
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10">
        <TextBox Width="300" Text="{Binding Age, StringFormat={}{0:0.0}}" />
        <TextBox Width="300" PasswordChar="*" Watermark="Please enter your password"/>
-       <TextBox Width="300" Text="{Binding Input^,FallbackValue='wait a minite'}" Watermark="this is a input box"/>
+       <TextBox Width="300" Text="{Binding Input}" Watermark="this is a input box"/>
        <TextBlock Text="please enter your name:"></TextBlock>
        <AutoCompleteBox Width="300" ItemsSource="{Binding Source}"/>
        <MaskedTextBox Width="300" Mask="###-####-####"/>
