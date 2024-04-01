@@ -40,6 +40,17 @@
         <entry key="src/Automatech.AvaloniaApp/Views/TabView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaApp/Views/TextBoxView.axaml" value="src/Automatech.AvaloniaApp/Automatech.AvaloniaApp.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/App.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Control/Button.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Control/TextBox.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Control/Window.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Control/_Index.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Dark/Brush.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Dark/Color.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Default/_Index.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Font.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Geometry.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Index.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Size.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Views/MainWindow.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaMvvmApp/App.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />
         <entry key="src/Automatech.AvaloniaMvvmApp/Views/MainWindow.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />

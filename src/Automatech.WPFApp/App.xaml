@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Automatech.WPFApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <ResourceDictionary Source="Theme/Index.xaml"/>
     </Application.Resources>
 </Application>

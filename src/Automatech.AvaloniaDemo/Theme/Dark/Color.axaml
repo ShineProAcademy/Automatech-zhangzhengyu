@@ -1,0 +1,61 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Color x:Key="LightPrimaryColor">#3491fa</Color>
+    <Color x:Key="PrimaryColor">#3491fa</Color>
+    <Color x:Key="DarkPrimaryColor">#044289</Color>
+
+    <Color x:Key="LightDangerColor">#F53F3F</Color>
+    <Color x:Key="DangerColor">#F53F3F</Color>
+    <Color x:Key="DarkDangerColor">#450c0f</Color>
+    
+    <Color x:Key="LightWarningColor">#F39700</Color>
+    <Color x:Key="WarningColor">#F39700</Color>
+    <Color x:Key="DarkWarningColor">#4c3a0f</Color>
+
+    <Color x:Key="LightInfoColor">#3491FA</Color>
+    <Color x:Key="InfoColor">#3491FA</Color>
+    <Color x:Key="DarkInfoColor">#003c44</Color>
+    
+    <Color x:Key="LightSuccessColor">#00B42A</Color>
+    <Color x:Key="SuccessColor">#00B42A</Color>
+    <Color x:Key="DarkSuccessColor">#113a1b</Color>
+    
+    <Color x:Key="PrimaryTextColor">White</Color>
+    <Color x:Key="ButtonPrimaryTextColor">White</Color>
+    <Color x:Key="SecondaryTextColor">#757575</Color>
+    <Color x:Key="ThirdlyTextColor">#3f3f46</Color>
+    <Color x:Key="ReverseTextColor">#212121</Color>
+    <Color x:Key="TextIconColor">White</Color>
+    <Color x:Key="ToggleIconColor">Green</Color>
+    <Color x:Key="ToggleButtonBackgroundColor">#009A29</Color>
+    <Color x:Key="ButtonBackgroundColor">#2d2d30</Color>
+    <Color x:Key="ButtonBackgroundColorStop">#353535</Color>
+    <Color x:Key="ButtonBackgroundColorHover">#3B3B42</Color>
+    <Color x:Key="ButtonBackgroundColorHoverStop">#595959</Color>
+    <Color x:Key="BackgroundHighlightColor">#2E7BFD</Color>
+    <Color x:Key="ButtonBorderColor">#000</Color>
+    <Color x:Key="BorderHighlightColor">#57A9FB</Color>
+
+    <Color x:Key="BorderColor">#3f3f46</Color>
+    <Color x:Key="SecondaryBorderColor">#555555</Color>
+    <Color x:Key="BackgroundColor">#000000</Color>
+    <Color x:Key="RegionColor">#1c1c1c</Color>
+    <Color x:Key="SecondaryRegionColor">#2d2d30</Color>
+    <Color x:Key="ThirdlyRegionColor">#3f3f46</Color>
+    <Color x:Key="TitleColor">#326cf3</Color>
+    <Color x:Key="SecondaryTitleColor">#326cf3</Color>
+
+    <Color x:Key="DefaultColor">#686868</Color>
+    <Color x:Key="DarkDefaultColor">#686868</Color>
+
+    <Color x:Key="AccentColor">#37d9f1</Color>
+    <Color x:Key="DarkAccentColor">#37d9f1</Color>
+    <Color x:Key="Accent2Color">#24B2FF</Color>
+
+    <Color x:Key="DarkMaskColor">#40000000</Color>
+    <Color x:Key="DarkOpacityColor">#40000000</Color>
+    <!-- <sys:UInt32 x:Key="BlurGradientValue">0x99000000</sys:UInt32> -->
+
+    <Color x:Key="AlarmColor">#e36464</Color>
+</ResourceDictionary>

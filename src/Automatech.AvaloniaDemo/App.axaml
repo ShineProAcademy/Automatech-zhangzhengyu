@@ -9,7 +9,7 @@
     </Application.DataTemplates>
   
     <Application.Styles>
-        <!-- <FluentTheme /> -->
-        <StyleInclude Source="avares://Automatech.Avalonia.Theme/CustomTheme.axaml"></StyleInclude>
+        <FluentTheme />
+        <!-- <StyleInclude Source="avares://Automatech.AvaloniaDemo/Theme/Index.axaml"></StyleInclude> -->
     </Application.Styles>
 </Application>

@@ -24,6 +24,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Automatech.Avalonia.Theme\Automatech.Avalonia.Theme.csproj" />
+    <UpToDateCheckInput Remove="ControlTheme\Button.axaml" />
+    <UpToDateCheckInput Remove="ControlTheme\Window.axaml" />
+    <UpToDateCheckInput Remove="ControlTheme\_Index.axaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Theme\Control\Button.axaml" />
+    <AdditionalFiles Include="Theme\Control\Window.axaml" />
+    <AdditionalFiles Include="Theme\Control\_Index.axaml" />
   </ItemGroup>
 </Project>
