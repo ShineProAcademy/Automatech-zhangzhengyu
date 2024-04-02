@@ -11,7 +11,6 @@ namespace Automatech.Avalonia.Controls
     /// </summary>
     public class StatusControl : TemplatedControl
     {
-
         public ObservableCollection<StatusItem> Items { get; private set; }
 
         public StatusControl()
@@ -26,7 +25,7 @@ namespace Automatech.Avalonia.Controls
         }
 
         public static readonly StyledProperty<string> StateProperty = AvaloniaProperty.Register<StatusControl, string>(
-            "State");
+            nameof(State));
 
         public string State
         {
@@ -35,7 +34,7 @@ namespace Automatech.Avalonia.Controls
         }
 
         public static readonly StyledProperty<Brush> BrushProperty = AvaloniaProperty.Register<StatusControl, Brush>(
-            "Brush");
+            nameof(Brush));
 
         public Brush Brush 
         {
@@ -44,7 +43,7 @@ namespace Automatech.Avalonia.Controls
         }
 
         public static readonly StyledProperty<string> TextProperty = AvaloniaProperty.Register<StatusControl, string>(
-            "Text");
+            nameof(Text));
 
         public string Text
         {

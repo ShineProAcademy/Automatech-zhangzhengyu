@@ -6,6 +6,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Automatech.AvaloniaDemo.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
+        xmlns:controls="clr-namespace:Automatech.Avalonia.Controls;assembly=Automatech.Avalonia.Controls"
         Icon="/Assets/avalonia-logo.ico"
         Title="Automatech.AvaloniaDemo" 
         WindowStartupLocation="CenterScreen">
@@ -16,7 +17,13 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-   <TextBox Width="120" Height="60" TextWrapping="Wrap">
-     
-   </TextBox>
+   <StackPanel Spacing="10">
+       <Button Content="测试" Padding="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+       <controls:IconButton Placement="Right" Content="测试" Padding="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+           <controls:IconButton.Icon>
+               <TextBlock Text="图标"></TextBlock>
+           </controls:IconButton.Icon>
+       </controls:IconButton>
+   </StackPanel>
+
 </Window>

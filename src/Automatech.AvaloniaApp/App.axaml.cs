@@ -45,7 +45,7 @@ namespace Automatech.AvaloniaApp
         /// </summary>
         private void ConfigureServices()
         {
-            Container.RegisterInstance<IUnityContainer>(Container);
+            //Container.RegisterInstance<IUnityContainer>(Container);
             Container.RegisterType<IDataRepository<Student, int>,StudentRepository>();
         }
         
