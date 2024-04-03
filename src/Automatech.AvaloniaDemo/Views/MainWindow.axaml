@@ -16,14 +16,33 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-   <StackPanel Spacing="10">
-       <Button Content="测试" Padding="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-       <controls:IconButton Placement="Right" Content="测试" Padding="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-           <controls:IconButton.Icon>
-               <TextBlock Text="图标"></TextBlock>
-           </controls:IconButton.Icon>
-       </controls:IconButton>
-   </StackPanel>
-
+   <ScrollViewer>
+       <StackPanel Spacing="30">
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+           <TextBlock Text="gjfkgj"></TextBlock>
+      
+       </StackPanel>
+   </ScrollViewer>
 </Window>

@@ -16,6 +16,7 @@
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.10" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Svg.Skia" Version="11.0.0.17" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.10" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.10" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
@@ -27,6 +28,21 @@
     <UpToDateCheckInput Remove="ControlTheme\Button.axaml" />
     <UpToDateCheckInput Remove="ControlTheme\Window.axaml" />
     <UpToDateCheckInput Remove="ControlTheme\_Index.axaml" />
+    <UpToDateCheckInput Remove="Theme\Styles\Button.axaml" />
+    <UpToDateCheckInput Remove="Assets\Images\AdjustPressure.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\AlarmReset.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\BackMid.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\BacktoMarkPoint.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\Bridge.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\BuzzerClose.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\Chamfer.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\CleanNozzle.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\Clear.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\FocusCompensate.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\GraphSelect.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\Layer.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\Merge.svg" />
+    <UpToDateCheckInput Remove="Assets\Images\NewFile.svg" />
   </ItemGroup>
 
   <ItemGroup>

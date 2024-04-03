@@ -1,0 +1,21 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Add Resources Here -->
+    <ControlTheme x:Key="{x:Type PathIcon}" TargetType="{x:Type PathIcon}">
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryTextBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="PathIcon">
+                   <Border Background="{TemplateBinding Background}">
+                       <Viewbox Height="{TemplateBinding Height}" 
+                                Width="{TemplateBinding Width}">
+                           <Path Data="{TemplateBinding Data}" 
+                                 Fill="{TemplateBinding Foreground}"
+                                 Stretch="Uniform"/>
+                       </Viewbox>
+                   </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </ControlTheme>
+</ResourceDictionary>

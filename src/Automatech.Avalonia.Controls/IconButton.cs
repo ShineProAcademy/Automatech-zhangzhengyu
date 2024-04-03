@@ -1,4 +1,3 @@
-using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Metadata;
@@ -9,25 +8,24 @@ namespace Automatech.Avalonia.Controls
     /// <summary>
     /// 带图标的按钮
     /// </summary>
-    [PseudoClasses(P_LEFT,P_RIGHT,P_TOP,P_BOTTOM)]
+    [PseudoClasses(P_LEFT, P_RIGHT, P_TOP, P_BOTTOM, P_EMPTY)]
     public class IconButton : Button
     {
         private const string P_LEFT = ":left";
         private const string P_RIGHT = ":right";
         private const string P_TOP = ":top";
         private const string P_BOTTOM = ":bottom";
+        private const string P_EMPTY = ":empty";
 
         static IconButton()
         {
-            PlacementProperty.Changed.AddClassHandler<IconButton,Position>((s, e) =>
+            IconPlacementProperty.Changed.AddClassHandler<IconButton,Position>((s, e) =>
             {
-                Console.WriteLine(e.NewValue.Value);
-                if (e.NewValue.Value == e.OldValue.Value)
-                {
-                    return;
-                }
-
-                s.SetPlacement(e.NewValue.Value);
+                s.SetPlacement(e.NewValue.Value, s.Icon);
+            });
+            IconProperty.Changed.AddClassHandler<IconButton, object>((s, e) =>
+            {
+                s.SetPlacement(s.IconPlacement, e.NewValue.Value);
             });
         }
 
@@ -49,17 +47,27 @@ namespace Automatech.Avalonia.Controls
             set => SetValue(IconTemplateProperty, value);
         }
         
-        public static readonly StyledProperty<Position> PlacementProperty =
-            AvaloniaProperty.Register<IconButton, Position>(nameof(Placement));
+        public static readonly StyledProperty<Position> IconPlacementProperty =
+            AvaloniaProperty.Register<IconButton, Position>(nameof(IconPlacement));
 
-        public Position Placement
+        public Position IconPlacement
         {
-            get => GetValue(PlacementProperty);
-            set => SetValue(PlacementProperty, value);
+            get => GetValue(IconPlacementProperty);
+            set => SetValue(IconPlacementProperty, value);
         }
         
-        private void SetPlacement(Position position)
+        private void SetPlacement(Position position, object icon)
         {
+            if (icon == null)
+            {
+                PseudoClasses.Set(P_EMPTY, true);
+                PseudoClasses.Set(P_LEFT, false);
+                PseudoClasses.Set(P_RIGHT, false);
+                PseudoClasses.Set(P_TOP, false);
+                PseudoClasses.Set(P_BOTTOM, false);
+                return;
+            }
+            
             PseudoClasses.Set(P_LEFT, position == Position.Left);
             PseudoClasses.Set(P_RIGHT, position == Position.Right);
             PseudoClasses.Set(P_TOP, position == Position.Top);

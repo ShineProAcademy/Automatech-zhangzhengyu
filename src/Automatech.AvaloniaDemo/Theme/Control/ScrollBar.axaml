@@ -1,11 +1,48 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- Add Resources Here -->
+    <ControlTheme x:Key="ScrollBarThumb" TargetType="{x:Type Thumb}">
+        <Setter Property="Background" Value="Red"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Border x:Name="PART_Border" CornerRadius="{TemplateBinding CornerRadius}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        
+        <Style Selector="^:pointerover" >
+            <Setter Property="Background" Value="{DynamicResource SecondaryTextBrush}" />
+        </Style>
+        
+        <Style Selector="^:pressed" >
+            <Setter Property="Background" Value="{DynamicResource PrimaryTextBrush}" />
+        </Style>
+    </ControlTheme>
+    
     <ControlTheme x:Key="{x:Type ScrollBar}" TargetType="{x:Type ScrollBar}">
+        <Setter Property="Width" Value="30"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ScrollBar}">
-                    
+                    <Border>
+                        <Track>
+                            <Track.DecreaseButton>
+                                <RepeatButton Focusable="False">
+                                    
+                                </RepeatButton>
+                            </Track.DecreaseButton>
+                            <Track.IncreaseButton>
+                                <RepeatButton Focusable="False"/>
+                            </Track.IncreaseButton>
+                            <Track.Thumb>
+                                <Thumb Theme="{StaticResource ScrollBarThumb}"></Thumb>
+                            </Track.Thumb>
+                        </Track>
+                    </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

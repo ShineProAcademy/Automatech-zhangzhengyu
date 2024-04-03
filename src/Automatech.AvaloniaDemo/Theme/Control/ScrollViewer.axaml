@@ -1,6 +1,34 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ControlTheme x:Key="{x:Type ScrollViewer}" TargetType="{x:Type ScrollViewer}">
-      
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryTextBrush}"/>
+        <Setter Property="Template">
+           <Setter.Value>
+               <ControlTemplate TargetType="{x:Type ScrollViewer}">
+                   <Grid RowDefinitions="* Auto" ColumnDefinitions="* Auto">
+                       <ScrollContentPresenter x:Name="PART_ScrollContentPresenter" 
+                            Content="{TemplateBinding Content}"
+                            Grid.ColumnSpan="2"
+                            Grid.RowSpan="2"
+                            Background="{TemplateBinding Background}"
+                            Padding="{TemplateBinding Padding}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            VerticalSnapPointsAlignment="{TemplateBinding VerticalSnapPointsAlignment}"
+                            HorizontalSnapPointsAlignment="{TemplateBinding HorizontalSnapPointsAlignment}"
+                            VerticalSnapPointsType="{TemplateBinding VerticalSnapPointsType}"
+                            HorizontalSnapPointsType="{TemplateBinding HorizontalSnapPointsType}"
+                            ScrollViewer.IsScrollInertiaEnabled="{TemplateBinding IsScrollInertiaEnabled}">
+                            <ScrollContentPresenter.GestureRecognizers>
+                               <ScrollGestureRecognizer CanHorizontallyScroll="{Binding  #PART_ScrollContentPresenter.CanHorizontallyScroll}"
+                                    CanVerticallyScroll="{Binding #PART_ScrollContentPresenter.CanVerticallyScroll}"
+                                    IsScrollInertiaEnabled="{Binding Path=(ScrollViewer.IsScrollInertiaEnabled),  ElementName=PART_ScrollContentPresenter}"/>
+                            </ScrollContentPresenter.GestureRecognizers>
+                       </ScrollContentPresenter>
+                       <ScrollBar x:Name="PART_VerticalScrollBar" Grid.Column="1" Orientation="Vertical"/>
+                       <ScrollBar x:Name="PART_HorizontalScrollBar" Grid.Row="1" Grid.Column="1" Orientation="Horizontal"/>
+                   </Grid>
+               </ControlTemplate>
+           </Setter.Value>
+       </Setter>
     </ControlTheme>
 </ResourceDictionary>

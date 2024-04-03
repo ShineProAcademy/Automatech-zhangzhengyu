@@ -5,6 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:asset="clr-namespace:Automatech.AvaloniaApp.Assets.localization"
              xmlns:vm="clr-namespace:Automatech.AvaloniaApp.ViewModels"
+             xmlns:u="https://irihi.tech/ursa"
              x:DataType="vm:ButtonViewModel"
              x:Class="Automatech.AvaloniaApp.Views.ButtonView">
     <StackPanel Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -12,7 +13,6 @@
         <RadioButton Height="30" Width="120" Content="功能1"></RadioButton>
         <ToggleSwitch Content="开关"></ToggleSwitch>
         <ButtonSpinner ShowButtonSpinner="True" ButtonSpinnerLocation="Right" Content="0" Spin="Spinner_OnSpin">
-            
         </ButtonSpinner>
         <SplitButton Content="文件">
             <SplitButton.Flyout>

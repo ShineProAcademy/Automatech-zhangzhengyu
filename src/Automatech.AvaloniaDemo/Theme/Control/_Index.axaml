@@ -3,7 +3,11 @@
     <ResourceDictionary.MergedDictionaries>
         <!-- <ResourceInclude Source="TextBox.axaml" /> -->
         <ResourceInclude Source="Button.axaml" />
+        <ResourceInclude Source="PathIcon.axaml" />
         <ResourceInclude Source="IconButton.axaml" />
+        <ResourceInclude Source="RepeatButton.axaml" />
+        <ResourceInclude Source="ScrollBar.axaml" />
+        <ResourceInclude Source="ScrollViewer.axaml" />
         <ResourceInclude Source="Window.axaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

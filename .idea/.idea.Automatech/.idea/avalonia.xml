@@ -42,10 +42,12 @@
         <entry key="src/Automatech.AvaloniaDemo/App.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/Button.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/IconButton.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Control/PathIcon.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/RepeatButton.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/ScrollBar.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/ScrollViewer.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/TextBox.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Control/Thumb.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/Window.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Control/_Index.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Dark/Brush.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
@@ -55,6 +57,7 @@
         <entry key="src/Automatech.AvaloniaDemo/Theme/Geometry.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Index.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Theme/Size.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
+        <entry key="src/Automatech.AvaloniaDemo/Theme/Styles/Button.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaDemo/Views/MainWindow.axaml" value="src/Automatech.AvaloniaDemo/Automatech.AvaloniaDemo.csproj" />
         <entry key="src/Automatech.AvaloniaMvvmApp/App.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />
         <entry key="src/Automatech.AvaloniaMvvmApp/Views/MainWindow.axaml" value="src/Automatech.AvaloniaMvvmApp/Automatech.AvaloniaMvvmApp.csproj" />

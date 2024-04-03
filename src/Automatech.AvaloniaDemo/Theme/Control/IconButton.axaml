@@ -10,7 +10,9 @@
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="Foreground" Value="{DynamicResource PrimaryTextBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrush}" />
-        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type controls:IconButton}">
@@ -23,13 +25,15 @@
                             Margin="{TemplateBinding Padding}"
                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                             HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
-                            <ContentControl Content="{TemplateBinding Icon}"
+                            <ContentPresenter x:Name="PART_IconPresenter" 
+                                Content="{TemplateBinding Icon}"
                                 VerticalAlignment="Center"
                                 HorizontalAlignment="Center"
                                 IsVisible="{Binding Icon, RelativeSource={RelativeSource Mode=TemplatedParent},Converter={x:Static ObjectConverters.IsNotNull}}"/>
-                            <ContentPresenter Grid.Column="1" Content="{TemplateBinding Content}"
-                                  VerticalAlignment="Center"
-                                  HorizontalAlignment="Center"/>
+                            <ContentPresenter x:Name="PART_ContentPresenter" 
+                                Grid.Column="1" Content="{TemplateBinding Content}"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
                         </Grid>
                     </Border>
                 </ControlTemplate>
@@ -37,11 +41,73 @@
         </Setter>
         
         <Style Selector="^:pointerover">
-            <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrushHover}"></Setter>
+            <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrushHover}"/>
         </Style>
         
         <Style Selector="^:pressed">
-            <Setter Property="Background" Value="{DynamicResource BackgroundHighlightBrush}"></Setter>
+            <Setter Property="RenderTransform" Value="scale(0.98)"/>
+        </Style>
+        
+        <Style Selector="^.Information">
+            <Setter Property="Foreground" Value="{DynamicResource LightInfoBrush}" />
+        </Style>
+        
+        <Style Selector="^.Warning">
+            <Setter Property="Foreground" Value="{DynamicResource LightWarningBrush}" />
+        </Style>
+        
+        <Style Selector="^.Danger">
+            <Setter Property="Foreground" Value="{DynamicResource LightDangerBrush}" />
+        </Style>
+        
+        <Style Selector="^.Success">
+            <Setter Property="Foreground" Value="{DynamicResource LightSuccessBrush}" />
+        </Style>
+        
+        <Style Selector="^:left">
+            <Style Selector="^ /template/ ContentPresenter#PART_IconPresenter">
+                <Setter Property="Grid.Column" Value="0" />
+            </Style>
+            <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Grid.Column" Value="1"/>
+                <Setter Property="Margin" Value="5 0 0 0"/>
+            </Style>
+        </Style>
+        
+        <Style Selector="^:right">
+            <Style Selector="^ /template/ ContentPresenter#PART_IconPresenter">
+                <Setter Property="Grid.Row" Value="0" />
+                <Setter Property="Grid.Column" Value="1" />
+            </Style>
+            <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Grid.Row" Value="0" />
+                <Setter Property="Grid.Column" Value="0"/>
+                <Setter Property="Margin" Value="0 0 5 0"/>
+            </Style>
+        </Style>
+        
+        <Style Selector="^:top">
+            <Style Selector="^ /template/ ContentPresenter#PART_IconPresenter">
+                <Setter Property="Grid.Row" Value="0" />
+                <Setter Property="Grid.Column" Value="0" />
+            </Style>
+            <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Grid.Row" Value="1"/>
+                <Setter Property="Grid.Column" Value="0" />
+                <Setter Property="Margin" Value="0 5 0 0"/>
+            </Style>
+        </Style>
+        
+        <Style Selector="^:bottom">
+            <Style Selector="^ /template/ ContentPresenter#PART_IconPresenter">
+                <Setter Property="Grid.Row" Value="1" />
+                <Setter Property="Grid.Column" Value="0" />
+            </Style>
+            <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Grid.Row" Value="0"/>
+                <Setter Property="Grid.Column" Value="0" />
+                <Setter Property="Margin" Value="0 0 0 5"/>
+            </Style>
         </Style>
     </ControlTheme>
 </ResourceDictionary>
